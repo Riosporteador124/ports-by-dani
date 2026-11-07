@@ -144,6 +144,12 @@ dialog::backdrop { background: #070510cf; }
 .detail-content p:not(.eyebrow) { line-height: 1.5; color: #d9cde9; }
 .detail-actions { display: flex; gap: 8px; flex-wrap: wrap; }
 .detail-actions p { margin: 0; }
+.detail-guide { margin-top: 22px; color: #d9cde9; font-size: .91rem; line-height: 1.5; overflow-wrap: anywhere; }
+.detail-guide h3 { color: var(--text); margin: 18px 0 6px; font-size: 1rem; }
+.detail-guide ul, .detail-guide ol { margin: 0; padding-left: 22px; }
+.detail-guide li + li { margin-top: 5px; }
+.detail-note { padding: 10px 12px; border-left: 2px solid var(--yellow); background: #2b1f40; }
+.detail-content .detail-credit:not(.eyebrow) { margin-bottom: 0; color: var(--muted); font-size: .72rem; }
 
 @media (min-width: 1550px) { .hero-art { background-size: cover; } }
 @media (max-width: 1230px) {

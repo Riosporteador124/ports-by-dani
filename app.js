@@ -170,10 +170,21 @@ function detail(project) {
   const image = coverUrl(project);
   el('detail-image').hidden = !image;
   if (image) el('detail-image').src = image;
-  el('detail-title').textContent = project.titulo;
+  el('detail-title').textContent = project.tituloDetalle || project.titulo;
   el('detail-type').textContent = (project.tipo === 'adaptador' ? 'ADAPTADOR' : 'PORT') + (project.ejemplo ? ' / FICHA DE EJEMPLO' : '');
   el('detail-tags').innerHTML = Object.values(tags(project)).join('');
   el('detail-description').textContent = project.descripcion;
+  const guide = el('detail-guide');
+  guide.hidden = !project.detalles?.length && !project.nota;
+  guide.innerHTML = (project.detalles ?? []).map(({titulo, puntos, numerado}) => {
+    const list = numerado ? 'ol' : 'ul';
+    return '<section><h3>' + escape(titulo) + '</h3><' + list + '>' +
+      puntos.map(point => '<li>' + escape(point) + '</li>').join('') +
+      '</' + list + '></section>';
+  }).join('') + (project.nota ? '<p class="detail-note">' + escape(project.nota) + '</p>' : '');
+  const credit = el('detail-credit');
+  credit.hidden = !project.creditoImagen;
+  credit.textContent = project.creditoImagen || '';
   const download = projectUrl(project.descarga);
   const repo = projectUrl(project.repositorio);
   el('detail-actions').innerHTML =

@@ -1,6 +1,45 @@
 // Cada proyecto es una ficha. Copia una entrada y cambia sus datos.
 const PROYECTOS = [
   {
+    id: 'apple-knight', titulo: '🍎 Apple Knight',
+    tituloDetalle: '🍎 Apple Knight — Port por Dani (testing)',
+    tipo: 'port', imagen: 'assets/apple-knight.webp', creditoImagen: 'Arte de Apple Knight · Limitless, LLC',
+    consolas: ['R36 Max'], motor: 'Unity',
+    estado: 'En pruebas', fecha: '2026-11-07', color: 'gold', ejemplo: false,
+    descripcion: 'Mi primer port. Incluye preparación automática del juego en la consola, controles físicos y mejoras en la sincronización de hilos para reducir el consumo de CPU.',
+    detalles: [
+      {
+        titulo: 'Imagen y rendimiento',
+        puntos: [
+          'Imagen 4:3 centrada, sin deformación. Conserva las texturas y la resolución de los textos.',
+          'Contador de FPS opcional, oculto al iniciar.',
+          'Probado en R36 Max XiFan con dArkOS4Clone. En la zona medida alcanzó aproximadamente 55–57 FPS. El rendimiento puede variar según el nivel y las cargas.'
+        ]
+      },
+      {
+        titulo: 'Controles auxiliares',
+        puntos: [
+          'R3 muestra u oculta los FPS.',
+          'L3 activa o desactiva el cursor.',
+          'A/B hacen clic con el cursor visible.',
+          'SELECT + START sale del juego.',
+          'Consulta el menú de controles del juego para las demás acciones.'
+        ]
+      },
+      {
+        titulo: 'Instalación',
+        numerado: true,
+        puntos: [
+          'Extrae Apple Knight.sh y la carpeta appleknight dentro de Ports.',
+          'Coloca un solo APK completo 2.3.6 ARMv7, código 23603, en appleknight/gamedata/. Consulta VERSION REQUERIDA.txt para comprobar la compilación exacta compatible.',
+          'Abre Apple Knight desde Ports.'
+        ]
+      }
+    ],
+    nota: 'El ZIP no incluye el APK ni datos comerciales. Conserva userdata al actualizar para mantener tu partida.',
+    descarga: 'https://github.com/Riosporteador124/ports-by-dani/releases/download/apple-knight-testing/APPLE_KNIGHT_DANI.zip', repositorio: ''
+  },
+  {
     id: 'cuphead', titulo: 'Cuphead', tipo: 'port', imagen: 'assets/cuphead.webp',
     consolas: ['R36S', 'R36 Max'], motor: 'Unity', version: '1.3.4',
     estado: 'Disponible', fecha: '2026-11-07', color: 'gold', ejemplo: true,
