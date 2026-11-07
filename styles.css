@@ -207,3 +207,10 @@ dialog::backdrop { background: #070510cf; }
   .card-meta .status .icon { display: none; }
   .cards.list .card-body { grid-template-rows: auto 1fr auto; }
 }
+
+/* Keep the original square cover visible in the wide card and detail image. */
+.cover img[src$="/iberia-oficial.webp"],
+.detail-inner > img[src$="/iberia-oficial.webp"] {
+  object-fit: contain;
+  background: #2b171a;
+}

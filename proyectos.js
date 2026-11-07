@@ -1,6 +1,38 @@
 // Cada proyecto es una ficha. Copia una entrada y cambia sus datos.
 const PROYECTOS = [
   {
+    id: 'pokemon-iberia', titulo: 'Pokémon Iberia', tituloDetalle: 'Pokémon Iberia — Port por Dani',
+    tipo: 'port', imagen: 'assets/iberia-oficial.webp', creditoImagen: 'Carátula original de Pokémon Iberia · EricLostie',
+    consolas: ['R36'], motor: 'RPG Maker XP', estado: 'En pruebas', fecha: '2026-11-07', color: 'gold', ejemplo: false,
+    descripcion: 'Port para la familia R36. Usa los archivos de Pokémon Iberia original V2.03 para Windows y los prepara en la consola.',
+    detalles: [
+      {
+        titulo: 'Instalación',
+        numerado: true,
+        puntos: [
+          'Extrae IBERIA_DANI.zip en ports de la microSD. Pokémon Iberia.sh y la carpeta iberia deben quedar juntos.',
+          'Copia Game.rgssad, Game.ini y las carpetas Audio y Fonts de Pokémon Iberia original V2.03 en iberia/gamedata/.',
+          'Abre Pokémon Iberia desde Ports. La primera apertura prepara los datos automáticamente. Espera a que termine.',
+          'Las siguientes aperturas reutilizan lo instalado.'
+        ]
+      },
+      {
+        titulo: 'Controles adicionales',
+        puntos: [
+          'Mantén R1 para acelerar los diálogos y el movimiento.',
+          'R3 muestra u oculta el contador de FPS, que empieza oculto.',
+          'SELECT + START cancela la preparación. Vuelve a abrir el port para continuar.'
+        ]
+      },
+      {
+        titulo: 'Requisitos del firmware',
+        puntos: ['Python 3 y compatibilidad con ejecución ARM32 y gráficos EGL/GLES ARM32.']
+      }
+    ],
+    nota: 'El ZIP requiere los datos originales del juego. Al actualizar, conserva userdata para mantener tu partida.',
+    descarga: 'https://github.com/Riosporteador124/ports-by-dani/releases/download/pokemon-iberia-testing/IBERIA_DANI.zip', repositorio: ''
+  },
+  {
     id: 'apple-knight', titulo: '🍎 Apple Knight',
     tituloDetalle: '🍎 Apple Knight — Port por Dani (testing)',
     tipo: 'port', imagen: 'assets/apple-knight.webp', creditoImagen: 'Arte de Apple Knight · Limitless, LLC',
@@ -203,27 +235,6 @@ const PROYECTOS = [
     "nota": "El ZIP contiene únicamente el adaptador. Debes aportar tu propio APK compatible.",
     "descarga": "https://github.com/Riosporteador124/ports-by-dani/releases/download/r36max-testing-2026-11-07/BLASPHEMOUS_DANI.zip",
     "repositorio": ""
-  },
-  {
-    id: 'crash', titulo: 'Crash Twinsanity', tipo: 'port', imagen: 'assets/crash.webp',
-    consolas: ['R36S', 'R36 Max'], motor: 'Otros', version: '1.1.0',
-    estado: 'En desarrollo', fecha: '2026-11-04', color: 'cyan', ejemplo: true,
-    descripcion: 'Ficha de muestra para un proyecto relacionado con la aventura de plataformas de Crash.',
-    descarga: '', repositorio: ''
-  },
-  {
-    id: 'ducktales', titulo: 'DuckTales Remastered', tipo: 'port', imagen: 'assets/ducktales.webp',
-    consolas: ['R36S', 'Linux ARM'], motor: 'Otros', version: '1.2.0',
-    estado: 'Disponible', fecha: '2026-11-03', color: 'gold', ejemplo: true,
-    descripcion: 'Ficha de muestra para una aventura de plataformas protagonizada por el tío Rico.',
-    descarga: '', repositorio: ''
-  },
-  {
-    id: 'dandara', titulo: 'Dandara', tipo: 'port', imagen: 'assets/dandara.webp',
-    consolas: ['R36S', 'R36 Max'], motor: 'Unity', version: '1.1.1',
-    estado: 'En pruebas', fecha: '2026-11-02', color: 'pink', ejemplo: true,
-    descripcion: 'Ficha de muestra para un metroidvania con movimiento entre superficies.',
-    descarga: '', repositorio: ''
   },
   {
     id: 'fifa', titulo: 'FIFA 14 Android', tipo: 'port', imagen: 'assets/fifa.webp',
