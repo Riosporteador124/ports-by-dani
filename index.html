@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#100b21">
+  <meta name="description" content="Catálogo de ports y adaptadores de Dani para R36S, R36 Max y Linux ARM.">
+  <title>Ports by Dani — Catálogo arcade</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="proyectos.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#contenido">Ir al contenido</a>
+  <header class="header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#inicio" aria-label="Ports by Dani, inicio"><img src="assets/logo.webp" width="780" height="260" alt="Ports by Dani"></a>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="#inicio" data-nav="inicio"><span data-icon="home"></span>Inicio</a>
+        <a href="#ports" data-nav="ports"><span data-icon="game"></span>Ports</a>
+        <a href="#adaptadores" data-nav="adaptadores"><span data-icon="tool"></span>Adaptadores</a>
+        <a href="#tutoriales" data-nav="tutoriales"><span data-icon="book"></span>Tutoriales</a>
+        <a href="#actualizaciones" data-nav="actualizaciones"><span data-icon="bell"></span>Actualizaciones</a>
+        <a href="#info" data-nav="info"><span data-icon="info"></span>Info</a>
+      </nav>
+      <button class="icon-button search-shortcut" type="button" id="search-shortcut" aria-label="Ir al buscador" title="Ir al buscador"><span data-icon="search"></span></button>
+    </div>
+  </header>
+
+  <main id="contenido" class="wrap" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-art" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span></span> EL ARCHIVO ARCADE DE DANI</p>
+        <h1 id="hero-title">Mis ports y<br><em>adaptadores</em></h1>
+        <p class="hero-description">Proyectos para R36S, R36 Max y Linux ARM.</p>
+      </div>
+      <span class="hero-tag" aria-hidden="true">01 / PORTS BY DANI</span>
+    </section>
+
+    <section id="catalogo" class="catalog" aria-labelledby="catalog-title">
+      <aside class="sidebar">
+        <button type="button" class="filter-title" id="filter-toggle" aria-expanded="true" aria-controls="filter-body"><span data-icon="filter"></span> Filtros <span class="chevron" data-icon="chevron"></span></button>
+        <div id="filter-body">
+          <button type="button" class="reset" id="reset"><span data-icon="grid"></span> Todos los proyectos</button>
+          <form id="filters" aria-label="Filtrar proyectos"></form>
+        </div>
+      </aside>
+      <div class="results">
+        <div class="results-heading">
+          <div><p class="eyebrow mini">BIBLIOTECA DE PROYECTOS</p><h2 id="catalog-title">Todos los ports</h2></div>
+          <p id="result-count" class="result-count" role="status"></p>
+        </div>
+        <div class="toolbar">
+          <label class="search"><span data-icon="search"></span><span class="sr">Buscar proyectos</span><input id="search" type="search" placeholder="Buscar port, juego o motor…" autocomplete="off"></label>
+          <label class="sort"><span data-icon="sort"></span><span class="sr">Ordenar proyectos</span><select id="sort"><option value="recent">Más recientes</option><option value="name">Nombre A–Z</option><option value="status">Por estado</option></select></label>
+          <div class="views" role="group" aria-label="Vista del catálogo">
+            <button type="button" data-view="grid" aria-label="Cuadrícula" title="Cuadrícula" aria-pressed="true"><span data-icon="grid"></span></button>
+            <button type="button" data-view="list" aria-label="Lista" title="Lista" aria-pressed="false"><span data-icon="list"></span></button>
+          </div>
+        </div>
+        <div id="cards" class="cards"></div>
+        <div id="empty" class="empty" hidden>
+          <span data-icon="search"></span>
+          <h3 id="empty-title">No hay coincidencias</h3>
+          <p id="empty-description">Prueba con otro término o limpia los filtros.</p>
+          <button type="button" id="empty-action" class="button">Limpiar filtros</button>
+        </div>
+        <noscript>Activa JavaScript para ver el catálogo y usar los filtros.</noscript>
+      </div>
+    </section>
+
+    <section id="page" class="content-page" hidden aria-labelledby="page-title">
+      <p class="eyebrow mini">PORTS BY DANI</p>
+      <h2 id="page-title"></h2>
+      <div id="page-body"></div>
+    </section>
+
+    <footer class="footer"><span>PORTS <b>BY DANI</b></span><span>R36S <i>◆</i> R36 MAX <i>◆</i> LINUX ARM</span><a href="#info">Acerca del catálogo <span aria-hidden="true">↗</span></a></footer>
+  </main>
+
+  <dialog id="details" aria-labelledby="detail-title">
+    <div class="detail-inner">
+      <form method="dialog"><button type="submit" class="icon-button close" aria-label="Cerrar ficha"><span data-icon="close"></span></button></form>
+      <img id="detail-image" alt="">
+      <div class="detail-content">
+        <p class="eyebrow mini" id="detail-type"></p>
+        <h2 id="detail-title"></h2>
+        <div class="detail-tags" id="detail-tags"></div>
+        <p id="detail-description"></p>
+        <div class="detail-actions" id="detail-actions"></div>
+      </div>
+    </div>
+  </dialog>
+</body>
+</html>
