@@ -1,6 +1,405 @@
 // Cada proyecto es una ficha. Copia una entrada y cambia sus datos.
 const PROYECTOS = [
   {
+    "id": "pokemon-anil",
+    "titulo": "Pokémon Añil",
+    "tituloDetalle": "Pokémon Añil — Port por Dani",
+    "tipo": "port",
+    "imagen": "assets/proximamente-pokemon-anil.webp",
+    "creditoImagen": "Carátula · Whack a Hack",
+    "consolas": [
+      "R36S",
+      "R36 Max"
+    ],
+    "motor": "RPG Maker XP",
+    "estado": "En pruebas",
+    "fecha": "2026-11-07",
+    "color": "cyan",
+    "ejemplo": false,
+    "descripcion": "Port de la edición de Windows con preparación automática. Las pruebas del extractor y el audio en consola siguen pendientes. Consulta REVISION Y PRUEBAS.txt.",
+    "detalles": [
+      {
+        "titulo": "Instalación",
+        "numerado": true,
+        "puntos": [
+          "Extrae Pokémon Añil.sh y la carpeta anil juntos en ports de la microSD.",
+          "Coloca Pokémon Añil v4.14 para Windows, como carpeta o archivo ZIP, RAR o 7z, en anil/gamedata/. También puedes copiar Game.ini y las carpetas Data, Graphics, Audio y Fonts. Si los recursos vienen en Game.rgssad, el port lo lee automáticamente.",
+          "Abre Pokémon Añil desde Ports. La primera apertura verifica y prepara los datos con una barra de progreso. Las siguientes reutilizan lo preparado."
+        ]
+      },
+      {
+        "titulo": "Controles adicionales",
+        "puntos": [
+          "Mantén R1 para acelerar el juego.",
+          "R3 muestra u oculta el contador de FPS. Empieza oculto.",
+          "SELECT + START cancela la preparación. Vuelve a abrir el port para continuar."
+        ]
+      }
+    ],
+    "nota": "El ZIP contiene el port. Aporta los datos originales del juego y conserva userdata al actualizar. El motor requiere soporte ARM32 y el preparador usa ARM64.",
+    "descarga": "https://github.com/Riosporteador124/ports-by-dani/releases/download/ports-2026-11-07/ANIL_ADAPTADOR_DANI.zip",
+    "repositorio": ""
+  },
+  {
+    "id": "pokemon-bizarre",
+    "titulo": "Pokémon Bizarre",
+    "tituloDetalle": "Pokémon Bizarre — Port por Dani",
+    "tipo": "port",
+    "imagen": "assets/proximamente-pokemon-bizarre.webp",
+    "creditoImagen": "Carátula · Whack a Hack",
+    "consolas": [
+      "R36S",
+      "R36 Max"
+    ],
+    "motor": "RPG Maker XP",
+    "estado": "En pruebas",
+    "fecha": "2026-11-07",
+    "color": "pink",
+    "ejemplo": false,
+    "descripcion": "Port de la edición de Windows con preparación automática. Las pruebas del extractor y el audio en consola siguen pendientes. Consulta REVISION Y PRUEBAS.txt.",
+    "detalles": [
+      {
+        "titulo": "Instalación",
+        "numerado": true,
+        "puntos": [
+          "Extrae Pokémon Bizarre.sh y la carpeta bizarre juntos en ports de la microSD.",
+          "Coloca Pokémon Bizarre para Windows, como carpeta o archivo ZIP, RAR o 7z, en bizarre/gamedata/. También puedes copiar Game.ini y las carpetas Data, Graphics, Audio y Fonts. Si los recursos vienen en Game.rgssad, el port lo lee automáticamente.",
+          "Abre Pokémon Bizarre desde Ports. La primera apertura verifica y prepara los datos con una barra de progreso. Las siguientes reutilizan lo preparado."
+        ]
+      },
+      {
+        "titulo": "Controles adicionales",
+        "puntos": [
+          "Mantén R1 para acelerar el juego.",
+          "R3 muestra u oculta el contador de FPS. Empieza oculto.",
+          "SELECT + START cancela la preparación. Vuelve a abrir el port para continuar."
+        ]
+      }
+    ],
+    "nota": "El ZIP contiene el port. Aporta los datos originales del juego y conserva userdata al actualizar. El motor requiere soporte ARM32 y el preparador usa ARM64.",
+    "descarga": "https://github.com/Riosporteador124/ports-by-dani/releases/download/ports-2026-11-07/BIZARRE_ADAPTADOR_DANI.zip",
+    "repositorio": ""
+  },
+  {
+    "id": "pokemon-consonancia",
+    "titulo": "Pokémon Consonancia",
+    "tituloDetalle": "Pokémon Consonancia — Port por Dani",
+    "tipo": "port",
+    "imagen": "assets/proximamente-pokemon-consonancia.webp",
+    "creditoImagen": "Carátula · Whack a Hack",
+    "consolas": [
+      "R36S",
+      "R36 Max"
+    ],
+    "motor": "RPG Maker XP",
+    "estado": "En pruebas",
+    "fecha": "2026-11-07",
+    "color": "violet",
+    "ejemplo": false,
+    "descripcion": "Port de la edición de Windows con preparación automática. Las pruebas del extractor y el audio en consola siguen pendientes. Consulta REVISION Y PRUEBAS.txt.",
+    "detalles": [
+      {
+        "titulo": "Instalación",
+        "numerado": true,
+        "puntos": [
+          "Extrae Pokémon Consonancia.sh y la carpeta consonancia juntos en ports de la microSD.",
+          "Coloca Pokémon Consonancia 1.3 para Windows, como carpeta o archivo ZIP, RAR o 7z, en consonancia/gamedata/. También puedes copiar Game.ini y las carpetas Data, Graphics, Audio y Fonts. Si los recursos vienen en Game.rgssad, el port lo lee automáticamente.",
+          "Abre Pokémon Consonancia desde Ports. La primera apertura verifica y prepara los datos con una barra de progreso. Las siguientes reutilizan lo preparado."
+        ]
+      },
+      {
+        "titulo": "Controles adicionales",
+        "puntos": [
+          "Mantén R1 para acelerar el juego.",
+          "R3 muestra u oculta el contador de FPS. Empieza oculto.",
+          "SELECT + START cancela la preparación. Vuelve a abrir el port para continuar."
+        ]
+      }
+    ],
+    "nota": "El ZIP contiene el port. Aporta los datos originales del juego y conserva userdata al actualizar. El motor requiere soporte ARM32 y el preparador usa ARM64.",
+    "descarga": "https://github.com/Riosporteador124/ports-by-dani/releases/download/ports-2026-11-07/CONSONANCIA_ADAPTADOR_DANI.zip",
+    "repositorio": ""
+  },
+  {
+    "id": "pokemon-frontera-digital",
+    "titulo": "Pokémon La Frontera Digital",
+    "tituloDetalle": "Pokémon La Frontera Digital — Port por Dani",
+    "tipo": "port",
+    "imagen": "assets/proximamente-pokemon-frontera-digital.webp",
+    "creditoImagen": "Carátula · Whack a Hack",
+    "consolas": [
+      "R36S",
+      "R36 Max"
+    ],
+    "motor": "RPG Maker XP",
+    "estado": "En pruebas",
+    "fecha": "2026-11-07",
+    "color": "cyan",
+    "ejemplo": false,
+    "descripcion": "Port de la edición de Windows con preparación automática. Las pruebas del extractor y el audio en consola siguen pendientes. Consulta REVISION Y PRUEBAS.txt.",
+    "detalles": [
+      {
+        "titulo": "Instalación",
+        "numerado": true,
+        "puntos": [
+          "Extrae Pokémon La Frontera Digital.sh y la carpeta frontera-digital juntos en ports de la microSD.",
+          "Coloca Pokémon La Frontera Digital v0.7.8 para Windows, como carpeta o archivo ZIP, RAR o 7z, en frontera-digital/gamedata/. También puedes copiar Game.ini y las carpetas Data, Graphics, Audio y Fonts. Si los recursos vienen en Game.rgssad, el port lo lee automáticamente.",
+          "Abre Pokémon La Frontera Digital desde Ports. La primera apertura verifica y prepara los datos con una barra de progreso. Las siguientes reutilizan lo preparado."
+        ]
+      },
+      {
+        "titulo": "Controles adicionales",
+        "puntos": [
+          "Mantén R1 para acelerar el juego.",
+          "R3 muestra u oculta el contador de FPS. Empieza oculto.",
+          "SELECT + START cancela la preparación. Vuelve a abrir el port para continuar."
+        ]
+      }
+    ],
+    "nota": "El ZIP contiene el port. Aporta los datos originales del juego y conserva userdata al actualizar. El motor requiere soporte ARM32 y el preparador usa ARM64.",
+    "descarga": "https://github.com/Riosporteador124/ports-by-dani/releases/download/ports-2026-11-07/FRONTERA_DIGITAL_ADAPTADOR_DANI.zip",
+    "repositorio": ""
+  },
+  {
+    "id": "pokemon-gadir",
+    "titulo": "Pokémon Gadir",
+    "tituloDetalle": "Pokémon Gadir — Port por Dani",
+    "tipo": "port",
+    "imagen": "assets/proximamente-pokemon-gadir.webp",
+    "creditoImagen": "Carátula · Whack a Hack",
+    "consolas": [
+      "R36S",
+      "R36 Max"
+    ],
+    "motor": "RPG Maker XP",
+    "estado": "En pruebas",
+    "fecha": "2026-11-07",
+    "color": "pink",
+    "ejemplo": false,
+    "descripcion": "Port de la edición de Windows con preparación automática. Las pruebas del extractor y el audio en consola siguen pendientes. Consulta REVISION Y PRUEBAS.txt.",
+    "detalles": [
+      {
+        "titulo": "Instalación",
+        "numerado": true,
+        "puntos": [
+          "Extrae Pokémon Gadir.sh y la carpeta gadir juntos en ports de la microSD.",
+          "Coloca Pokémon Gadir Deluxe DLC v1.1.1 para Windows, como carpeta o archivo ZIP, RAR o 7z, en gadir/gamedata/. También puedes copiar Game.ini y las carpetas Data, Graphics, Audio y Fonts. Si los recursos vienen en Game.rgssad, el port lo lee automáticamente.",
+          "Abre Pokémon Gadir desde Ports. La primera apertura verifica y prepara los datos con una barra de progreso. Las siguientes reutilizan lo preparado."
+        ]
+      },
+      {
+        "titulo": "Controles adicionales",
+        "puntos": [
+          "Mantén R1 para acelerar el juego.",
+          "R3 muestra u oculta el contador de FPS. Empieza oculto.",
+          "SELECT + START cancela la preparación. Vuelve a abrir el port para continuar."
+        ]
+      }
+    ],
+    "nota": "El ZIP contiene el port. Aporta los datos originales del juego y conserva userdata al actualizar. El motor requiere soporte ARM32 y el preparador usa ARM64.",
+    "descarga": "https://github.com/Riosporteador124/ports-by-dani/releases/download/ports-2026-11-07/GADIR_ADAPTADOR_DANI.zip",
+    "repositorio": ""
+  },
+  {
+    "id": "pokemon-opalo",
+    "titulo": "Pokémon Ópalo",
+    "tituloDetalle": "Pokémon Ópalo — Port por Dani",
+    "tipo": "port",
+    "imagen": "assets/pokemon-opalo.webp",
+    "creditoImagen": "Carátula · Whack a Hack",
+    "consolas": [
+      "R36S",
+      "R36 Max"
+    ],
+    "motor": "RPG Maker XP",
+    "estado": "En pruebas",
+    "fecha": "2026-11-07",
+    "color": "violet",
+    "ejemplo": false,
+    "descripcion": "Port de la edición de Windows con preparación automática. Las pruebas del extractor y el audio en consola siguen pendientes. Consulta REVISION Y PRUEBAS.txt.",
+    "detalles": [
+      {
+        "titulo": "Instalación",
+        "numerado": true,
+        "puntos": [
+          "Extrae Pokémon Ópalo.sh y la carpeta opalo juntos en ports de la microSD.",
+          "Coloca Pokémon Ópalo v2.11 para Windows, como carpeta o archivo ZIP, RAR o 7z, en opalo/gamedata/. También puedes copiar Game.ini y las carpetas Data, Graphics, Audio y Fonts. Si los recursos vienen en Game.rgssad, el port lo lee automáticamente.",
+          "Abre Pokémon Ópalo desde Ports. La primera apertura verifica y prepara los datos con una barra de progreso. Las siguientes reutilizan lo preparado."
+        ]
+      },
+      {
+        "titulo": "Controles adicionales",
+        "puntos": [
+          "Mantén R1 para acelerar el juego.",
+          "R3 muestra u oculta el contador de FPS. Empieza oculto.",
+          "SELECT + START cancela la preparación. Vuelve a abrir el port para continuar."
+        ]
+      }
+    ],
+    "nota": "El ZIP contiene el port. Aporta los datos originales del juego y conserva userdata al actualizar. El motor requiere soporte ARM32 y el preparador usa ARM64.",
+    "descarga": "https://github.com/Riosporteador124/ports-by-dani/releases/download/ports-2026-11-07/OPALO_ADAPTADOR_DANI.zip",
+    "repositorio": ""
+  },
+  {
+    "id": "pokemon-tectonic",
+    "titulo": "Pokémon Tectonic",
+    "tituloDetalle": "Pokémon Tectonic — Port por Dani",
+    "tipo": "port",
+    "imagen": "assets/proximamente-pokemon-tectonic.webp",
+    "creditoImagen": "Logo · Sitio oficial de Pokémon Tectonic",
+    "consolas": [
+      "R36S",
+      "R36 Max"
+    ],
+    "motor": "RPG Maker XP",
+    "estado": "En pruebas",
+    "fecha": "2026-11-07",
+    "color": "gold",
+    "ejemplo": false,
+    "descripcion": "Port de la edición de Windows con preparación automática. Las pruebas del extractor y el audio en consola siguen pendientes. Consulta REVISION Y PRUEBAS.txt. La mejora de rendimiento de textos y menús todavía requiere una medición en partida.",
+    "detalles": [
+      {
+        "titulo": "Instalación",
+        "numerado": true,
+        "puntos": [
+          "Extrae Pokémon Tectonic.sh y la carpeta tectonic juntos en ports de la microSD.",
+          "Coloca Pokémon Tectonic 3.4.2 para Windows, como carpeta o archivo ZIP, RAR o 7z, en tectonic/gamedata/. También puedes copiar Game.ini y las carpetas Data, Graphics, Audio y Fonts. Si los recursos vienen en Game.rgssad, el port lo lee automáticamente.",
+          "Abre Pokémon Tectonic desde Ports. La primera apertura verifica y prepara los datos con una barra de progreso. Las siguientes reutilizan lo preparado."
+        ]
+      },
+      {
+        "titulo": "Controles adicionales",
+        "puntos": [
+          "Mantén R1 para acelerar el juego.",
+          "R3 muestra u oculta el contador de FPS. Empieza oculto.",
+          "SELECT + START cancela la preparación. Vuelve a abrir el port para continuar."
+        ]
+      }
+    ],
+    "nota": "El ZIP contiene el port. Aporta los datos originales del juego y conserva userdata al actualizar. El motor requiere soporte ARM32 y el preparador usa ARM64.",
+    "descarga": "https://github.com/Riosporteador124/ports-by-dani/releases/download/ports-2026-11-07/TECTONIC_ADAPTADOR_DANI.zip",
+    "repositorio": ""
+  },
+  {
+    "id": "pokemon-titan",
+    "titulo": "Pokémon Titán",
+    "tituloDetalle": "Pokémon Titán — Port por Dani",
+    "tipo": "port",
+    "imagen": "assets/proximamente-pokemon-titan.webp",
+    "creditoImagen": "Carátula · Whack a Hack",
+    "consolas": [
+      "R36S",
+      "R36 Max"
+    ],
+    "motor": "RPG Maker XP",
+    "estado": "En pruebas",
+    "fecha": "2026-11-07",
+    "color": "gold",
+    "ejemplo": false,
+    "descripcion": "Port de la edición de Windows con preparación automática. Las pruebas del extractor y el audio en consola siguen pendientes. Consulta REVISION Y PRUEBAS.txt.",
+    "detalles": [
+      {
+        "titulo": "Instalación",
+        "numerado": true,
+        "puntos": [
+          "Extrae Pokémon Titán.sh y la carpeta titan juntos en ports de la microSD.",
+          "Coloca Pokémon Titán v2.10 para Windows, como carpeta o archivo ZIP, RAR o 7z, en titan/gamedata/. También puedes copiar Game.ini y las carpetas Data, Graphics, Audio y Fonts. Si los recursos vienen en Game.rgssad, el port lo lee automáticamente.",
+          "Abre Pokémon Titán desde Ports. La primera apertura verifica y prepara los datos con una barra de progreso. Las siguientes reutilizan lo preparado."
+        ]
+      },
+      {
+        "titulo": "Controles adicionales",
+        "puntos": [
+          "Mantén R1 para acelerar el juego.",
+          "R3 muestra u oculta el contador de FPS. Empieza oculto.",
+          "SELECT + START cancela la preparación. Vuelve a abrir el port para continuar."
+        ]
+      }
+    ],
+    "nota": "El ZIP contiene el port. Aporta los datos originales del juego y conserva userdata al actualizar. El motor requiere soporte ARM32 y el preparador usa ARM64.",
+    "descarga": "https://github.com/Riosporteador124/ports-by-dani/releases/download/ports-2026-11-07/TITAN_ADAPTADOR_DANI.zip",
+    "repositorio": ""
+  },
+  {
+    "id": "pokemon-z",
+    "titulo": "Pokémon Z",
+    "tituloDetalle": "Pokémon Z — Port por Dani",
+    "tipo": "port",
+    "imagen": "assets/proximamente-pokemon-z.webp",
+    "creditoImagen": "Carátula · Whack a Hack",
+    "consolas": [
+      "R36S",
+      "R36 Max"
+    ],
+    "motor": "RPG Maker XP",
+    "estado": "En pruebas",
+    "fecha": "2026-11-07",
+    "color": "gold",
+    "ejemplo": false,
+    "descripcion": "Port de la edición de Windows con preparación automática. Las pruebas del extractor y el audio en consola siguen pendientes. Consulta REVISION Y PRUEBAS.txt.",
+    "detalles": [
+      {
+        "titulo": "Instalación",
+        "numerado": true,
+        "puntos": [
+          "Extrae Pokémon Z.sh y la carpeta pokemon-z juntos en ports de la microSD.",
+          "Coloca Pokémon Z v2.18 para Windows, como carpeta o archivo ZIP, RAR o 7z, en pokemon-z/gamedata/. También puedes copiar Game.ini y las carpetas Data, Graphics, Audio y Fonts. Si los recursos vienen en Game.rgssad, el port lo lee automáticamente.",
+          "Abre Pokémon Z desde Ports. La primera apertura verifica y prepara los datos con una barra de progreso. Las siguientes reutilizan lo preparado."
+        ]
+      },
+      {
+        "titulo": "Controles adicionales",
+        "puntos": [
+          "Mantén R1 para acelerar el juego.",
+          "R3 muestra u oculta el contador de FPS. Empieza oculto.",
+          "SELECT + START cancela la preparación. Vuelve a abrir el port para continuar."
+        ]
+      }
+    ],
+    "nota": "El ZIP contiene el port. Aporta los datos originales del juego y conserva userdata al actualizar. El motor requiere soporte ARM32 y el preparador usa ARM64.",
+    "descarga": "https://github.com/Riosporteador124/ports-by-dani/releases/download/ports-2026-11-07/POKEMON_Z_ADAPTADOR_DANI.zip",
+    "repositorio": ""
+  },
+  {
+    "id": "wonder-boy",
+    "titulo": "Wonder Boy: The Dragon’s Trap",
+    "tituloDetalle": "Wonder Boy: The Dragon’s Trap — Port por Dani",
+    "tipo": "port",
+    "imagen": "assets/proximamente-wonder-boy.webp",
+    "creditoImagen": "Carátula · Steam",
+    "consolas": [
+      "R36S",
+      "R36 Max"
+    ],
+    "motor": "Otros",
+    "estado": "Disponible",
+    "fecha": "2026-11-07",
+    "color": "pink",
+    "ejemplo": false,
+    "descripcion": "Port de la edición Android con preparación automática. Esta entrega no documenta una medición de FPS ni pruebas de partida en consola.",
+    "detalles": [
+      {
+        "titulo": "Instalación",
+        "numerado": true,
+        "puntos": [
+          "Extrae Wonder Boy.sh y la carpeta wonderboy juntos en ports de la microSD.",
+          "Coloca tu APK Android 1.1.0 (105) ARM64 con OBB main.103 o XAPK completo de esa misma edición en wonderboy/gamedata/. Consulta VERSION REQUERIDA.txt para verificar los archivos.",
+          "Abre Wonder Boy desde Ports. La primera apertura verifica y prepara los datos con una barra de progreso. Las siguientes reutilizan lo preparado."
+        ]
+      },
+      {
+        "titulo": "Controles adicionales",
+        "puntos": [
+          "R3 muestra u oculta el contador de FPS. Empieza oculto.",
+          "SELECT + START cancela la preparación. Vuelve a abrir el port para continuar."
+        ]
+      }
+    ],
+    "nota": "El ZIP contiene el port. Aporta los archivos compatibles del juego y conserva home, userdata y saves al actualizar.",
+    "descarga": "https://github.com/Riosporteador124/ports-by-dani/releases/download/ports-2026-11-07/WONDER_BOY_ADAPTADOR_DANI.zip",
+    "repositorio": ""
+  },
+  {
     id: 'parahcuy', titulo: 'ParahCuy', tituloDetalle: 'ParahCuy — Port por Dani',
     tipo: 'port', imagen: 'assets/proximamente-parahcuy.webp', creditoImagen: 'Carátula · IGDB',
     consolas: ['R36S', 'R36 Max'], motor: 'GameMaker', estado: 'Jugable', fecha: '2026-11-07', color: 'gold', ejemplo: false,
@@ -351,16 +750,8 @@ const PROYECTOS = [
   ...[
     ['dandara', 'Dandara', 'pink', 'Carátula · Steam'],
     ['poketale', 'Poketale', 'violet'],
-    ['pokemon-anil', 'Pokémon Añil', 'cyan'],
-    ['pokemon-tectonic', 'Pokémon Tectonic', 'gold', 'Logo · Sitio oficial de Pokémon Tectonic'],
-    ['pokemon-bizarre', 'Pokémon Bizarre', 'pink'],
-    ['pokemon-consonancia', 'Pokémon Consonancia', 'violet'],
-    ['pokemon-frontera-digital', 'Pokémon Frontera Digital', 'cyan'],
-    ['pokemon-titan', 'Pokémon Titán', 'gold'],
-    ['pokemon-gadir', 'Pokémon Gadir', 'pink'],
     ["fifa-14-android", "FIFA 14 Android", "cyan", "Captura de FIFA 14 Android · Uptodown"],
     ["volhem", "Volhem", "violet", null],
-    ["pokemon-z", "Pokémon Z", "gold", "Carátula · Whack a Hack"],
     ["oddmar", "Oddmar", "gold", "Arte de Oddmar · Nintendo eShop"],
     ["sword-of-xolan", "Sword of Xolan", "pink", "Arte oficial · Alper Sarıkaya"],
     ["9-years-of-shadows", "9 Years of Shadows", "violet", "Carátula · Steam"],
@@ -375,7 +766,6 @@ const PROYECTOS = [
     ["skul", "Skul: The Hero Slayer", "violet", "Carátula · Steam"],
     ["turnip-boy", "Turnip Boy Commits Tax Evasion", "gold", "Carátula · Steam"],
     ["wizard-of-legend", "Wizard of Legend", "cyan", "Carátula · Steam"],
-    ["wonder-boy", "Wonder Boy: The Dragon’s Trap", "pink", "Carátula · Steam"],
     ["dwarf-journey", "Dwarf Journey", "gold", "Carátula · Steam"],
     ["unruly-heroes", "Unruly Heroes", "pink", "Carátula · Steam"],
     ["river-city-girls", "River City Girls", "violet", "Carátula · Steam"],
