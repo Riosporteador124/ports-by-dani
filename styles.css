@@ -216,3 +216,16 @@ dialog::backdrop { background: #070510cf; }
   object-fit: contain;
   background: #171f39;
 }
+
+.catalog-intro { margin: -3px 0 14px; color: var(--muted); font-size: .88rem; }
+.status.upcoming { background: #39305c; color: #f1e7ff; border-color: #ba9cec80; }
+.cover.upcoming {
+  background:
+    radial-gradient(ellipse at 50% 66%, color-mix(in srgb, var(--accent) 29%, transparent), transparent 72%),
+    repeating-linear-gradient(135deg, #231a36 0 1px, transparent 1px 11px),
+    #171225;
+}
+.cover.upcoming .icon { filter: drop-shadow(0 0 12px color-mix(in srgb, var(--accent) 65%, transparent)); }
+@media (min-width: 951px) {
+  .nav { flex-wrap: wrap; }
+}

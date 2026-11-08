@@ -5,6 +5,7 @@ const icons = {
   game: '<path d="M7 7h10c3 0 4 3 5 8s-2 5-4 3l-3-3H9l-3 3c-2 2-5 2-4-3s2-8 5-8Z"/><path d="M7 9v5m-2.5-2.5h5m6.5-1h.01m2.5 2h.01"/>',
   tool: '<path d="M14 7a5 5 0 0 1 6-5l-3 3 2 2 3-3a5 5 0 0 1-6 6L7 21a2 2 0 0 1-3-3l10-11Z"/>',
   book: '<path d="M12 6v15m0-15C9 3 5 3 2 4v14c4-1 7 0 10 3 3-3 6-4 10-3V4c-3-1-7-1-10 2Z"/>',
+  clock: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
   bell: '<path d="M18 8a6 6 0 1 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9m-8 12a2 2 0 0 0 4 0"/>',
   info: '<circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10h.01"/>',
   search: '<circle cx="10.7" cy="10.7" r="6.5"/><path d="m16 16 4.5 4.5"/>',
@@ -38,6 +39,7 @@ const states = {
   'Jugable': { style: 'available', icon: 'check' },
   'Disponible': { style: 'available', icon: 'check' },
   'En pruebas': { style: 'testing', icon: 'flask' },
+  'Próximamente': { style: 'upcoming', icon: 'clock' },
   'En desarrollo': { style: 'dev', icon: 'tool' }
 };
 const pages = {
@@ -69,7 +71,7 @@ function tags(project) {
   return {
     console: project.consolas.length ? '<span class="tag">' + icon('console') + escape(project.consolas.join(' / ')) + '</span>' : '',
     engine: project.motor ? '<span class="tag engine">' + icon('engine') + escape(project.motor) + '</span>' : '',
-    fps: '<span class="tag fps' + (fps ? '' : ' unmeasured') + '" title="' + escape(fpsContext) + '">' +
+    fps: project.estado === 'Próximamente' ? '' : '<span class="tag fps' + (fps ? '' : ' unmeasured') + '" title="' + escape(fpsContext) + '">' +
       icon('gauge') + escape(fpsLabel) + '</span>',
     status: project.estado ? '<span class="status ' + state.style + '">' + icon(state.icon) + escape(project.estado) + '</span>' : '',
     version: project.version ? '<span class="version">' + icon('tag') + 'v' + escape(project.version) + '</span>' : ''
@@ -86,7 +88,8 @@ function card(project) {
   const open = ' data-project="' + escape(project.id) + '"';
   const sample = project.ejemplo ? '<span class="sample">EJEMPLO</span>' : '';
   return '<article class="card" data-color="' + escape(project.color) + '">' +
-    '<div class="cover">' + sample + (image ? '<img src="' + escape(image) + '" alt="">' : icon('game')) + '</div>' +
+    '<div class="cover' + (project.estado === 'Próximamente' ? ' upcoming' : '') + '">' +
+      sample + (image ? '<img src="' + escape(image) + '" alt="">' : icon(project.estado === 'Próximamente' ? 'clock' : 'game')) + '</div>' +
     '<div class="card-body"><h3><button type="button"' + open + '>' + escape(project.titulo) + '</button></h3>' +
     '<div class="tags">' + badges.console + badges.engine + badges.fps + '</div>' +
     '<div class="card-meta">' + badges.version + badges.status +
@@ -94,20 +97,28 @@ function card(project) {
 }
 
 function makeFilters() {
+  const upcoming = section === 'proximamente';
+  const filterProjects = PROYECTOS.filter(project => (project.estado === 'Próximamente') === upcoming);
   el('filters').innerHTML = groups.map(group => {
-    const values = new Set([...group.defaults, ...PROYECTOS.flatMap(project => project[group.key] || [])]);
+    const defaults = upcoming && group.key === 'estado' ? [] : group.defaults;
+    const values = new Set([...defaults, ...filterProjects.flatMap(project => project[group.key] || [])]);
+    if (upcoming && group.key === 'motor' && !filterProjects.some(project => project.motor)) return '';
     return '<details open class="filter-group"><summary><span data-icon="' + group.icon + '"></span>' +
       group.title + '<span class="chevron" data-icon="chevron"></span></summary><div class="filter-options">' +
       [...values].map(value => '<label><input type="checkbox" name="' + group.key + '" value="' +
         escape(value) + '">' + escape(value) + '</label>').join('') + '</div></details>';
   }).join('');
+  el('filters').querySelectorAll('[data-icon]').forEach(node => node.innerHTML = icon(node.dataset.icon));
 }
 
 function renderCatalog() {
   const selections = new FormData(el('filters'));
   const query = normalized(el('search').value).trim().split(/\s+/).filter(Boolean);
   const category = section === 'adaptadores' ? 'adaptador' : 'port';
-  const categoryProjects = PROYECTOS.filter(project => project.tipo === category);
+  const upcoming = section === 'proximamente';
+  const categoryProjects = PROYECTOS.filter(project =>
+    project.tipo === category && (project.estado === 'Próximamente') === upcoming
+  );
   const results = categoryProjects.filter(project => {
     const haystack = normalized([project.titulo, project.descripcion, project.motor, project.estado, ...project.consolas].join(' '));
     return query.every(word => haystack.includes(word)) && groups.every(group => {
@@ -129,7 +140,8 @@ function renderCatalog() {
     }
   });
 
-  el('catalog-title').textContent = category === 'port' ? 'Todos los ports' : 'Adaptadores';
+  el('catalog-title').textContent = upcoming ? 'Próximamente' : category === 'port' ? 'Todos los ports' : 'Adaptadores';
+  el('catalog-intro').hidden = !upcoming;
   el('result-count').textContent = results.length + (results.length === 1 ? ' proyecto' : ' proyectos') +
     (results.length && results.every(project => project.ejemplo) ? ' · Muestra' : '');
   el('cards').innerHTML = results.map(card).join('');
@@ -141,8 +153,13 @@ function renderCatalog() {
 }
 
 function renderPage() {
+  const wasUpcoming = section === 'proximamente';
   section = location.hash.slice(1);
-  if (!['inicio', 'ports', 'adaptadores', 'tutoriales', 'actualizaciones', 'info'].includes(section)) section = 'inicio';
+  if (!['inicio', 'ports', 'proximamente', 'adaptadores', 'tutoriales', 'actualizaciones', 'info'].includes(section)) section = 'inicio';
+  if (!el('filters').children.length || wasUpcoming !== (section === 'proximamente')) {
+    makeFilters();
+    el('search').value = '';
+  }
   for (const link of document.querySelectorAll('[data-nav]')) {
     if (link.dataset.nav === section) link.setAttribute('aria-current', 'page');
     else link.removeAttribute('aria-current');
@@ -201,7 +218,6 @@ function detail(project) {
   el('details').showModal();
 }
 
-makeFilters();
 document.querySelectorAll('[data-icon]').forEach(node => node.innerHTML = icon(node.dataset.icon));
 renderPage();
 window.addEventListener('hashchange', renderPage);

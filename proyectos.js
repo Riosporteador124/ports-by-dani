@@ -264,5 +264,21 @@ const PROYECTOS = [
     "nota": "El ZIP contiene únicamente el adaptador. Debes aportar tu propio APK compatible.",
     "descarga": "https://github.com/Riosporteador124/ports-by-dani/releases/download/r36max-testing-2026-11-07/BLASPHEMOUS_DANI.zip",
     "repositorio": ""
-  }
+  },
+  ...[
+    ['dandara', 'Dandara', 'pink'],
+    ['poketale', 'Poketale', 'violet'],
+    ['pokemon-anil', 'Pokémon Añil', 'cyan'],
+    ['pokemon-tectonic', 'Pokémon Tectonic', 'gold'],
+    ['pokemon-bizarre', 'Pokémon Bizarre', 'pink'],
+    ['pokemon-consonancia', 'Pokémon Consonancia', 'violet'],
+    ['pokemon-frontera-digital', 'Pokémon Frontera Digital', 'cyan'],
+    ['pokemon-titan', 'Pokémon Titán', 'gold'],
+    ['pokemon-gadir', 'Pokémon Gadir', 'pink'],
+    ['teslagrad', 'Teslagrad', 'cyan']
+  ].map(([id, titulo, color]) => ({
+    id, titulo, color, tipo: 'port', estado: 'Próximamente',
+    consolas: ['R36S', 'R36 Max'], fecha: '',
+    descripcion: 'Port anunciado para R36S y R36 Max. La fecha de publicación está por anunciar.'
+  }))
 ];
