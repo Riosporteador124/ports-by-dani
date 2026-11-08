@@ -275,10 +275,31 @@ const PROYECTOS = [
     ['pokemon-frontera-digital', 'Pokémon Frontera Digital', 'cyan'],
     ['pokemon-titan', 'Pokémon Titán', 'gold'],
     ['pokemon-gadir', 'Pokémon Gadir', 'pink'],
-    ['teslagrad', 'Teslagrad', 'cyan', 'Carátula · Steam']
+    ['teslagrad', 'Teslagrad', 'cyan', 'Carátula · Steam'],
+    ["fifa-14-android", "FIFA 14 Android", "cyan", "Captura de FIFA 14 Android · Uptodown"],
+    ["volhem", "Volhem", "violet", null],
+    ["pokemon-z", "Pokémon Z", "gold", "Carátula · Whack a Hack"],
+    ["oddmar", "Oddmar", "gold", "Arte de Oddmar · Nintendo eShop"],
+    ["sword-of-xolan", "Sword of Xolan", "pink", "Arte oficial · Alper Sarıkaya"],
+    ["9-years-of-shadows", "9 Years of Shadows", "violet", "Carátula · Steam"],
+    ["pvz-fusion", "PvZ Fusion", "gold", "Captura de PvZ Fusion · Pikiran Rakyat"],
+    ["dark-raider", "Dark Raider", "pink", "Carátula · Steam"],
+    ["dead-station-2", "Dead Station 2", "cyan", "Icono oficial · Google Play"],
+    ["evoland-2", "Evoland 2", "gold", "Carátula · Steam"],
+    ["grimvalor", "Grimvalor", "pink", "Arte de Grimvalor · Nintendo eShop"],
+    ["gta-iii-android", "GTA III Android", "violet", "Icono de la edición Android · Rockstar Games"],
+    ["gta-vice-city-android", "GTA Vice City Android", "pink", "Icono de la edición Android · Rockstar Games"],
+    ["haak", "HAAK", "cyan", "Carátula · Steam"],
+    ["parahcuy", "Parahcuy", "gold", "Carátula · IGDB"],
+    ["skul", "Skul: The Hero Slayer", "violet", "Carátula · Steam"],
+    ["turnip-boy", "Turnip Boy Commits Tax Evasion", "gold", "Carátula · Steam"],
+    ["ugly", "Ugly", "pink", "Carátula · Steam"],
+    ["wizard-of-legend", "Wizard of Legend", "cyan", "Carátula · Steam"],
+    ["wonder-boy", "Wonder Boy: The Dragon’s Trap", "pink", "Carátula · Steam"],
+    ["dwarf-journey", "Dwarf Journey", "gold", "Carátula · Steam"]
   ].map(([id, titulo, color, creditoImagen = 'Carátula · Whack a Hack']) => ({
     id, titulo, color, tipo: 'port', estado: 'Próximamente',
-    imagen: `assets/proximamente-${id}.webp`, creditoImagen,
+    imagen: creditoImagen ? `assets/proximamente-${id}.webp` : '', creditoImagen,
     consolas: ['R36S', 'R36 Max'], fecha: '',
     descripcion: 'Port anunciado para R36S y R36 Max. La fecha de publicación está por anunciar.'
   }))
