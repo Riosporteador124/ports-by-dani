@@ -1,9 +1,40 @@
 // Cada proyecto es una ficha. Copia una entrada y cambia sus datos.
 const PROYECTOS = [
   {
+    id: 'runic-curse', titulo: 'Runic Curse', tituloDetalle: 'Runic Curse — Port por Dani',
+    tipo: 'port', imagen: 'assets/runic-curse-oficial.webp', creditoImagen: 'Arte oficial de Runic Curse · Nintendo eShop',
+    consolas: ['R36S', 'R36 Max'], motor: 'Unity', estado: 'En pruebas', fecha: '2026-11-07', color: 'violet', ejemplo: false,
+    descripcion: 'Port de Runic Curse para R36S y R36 Max. La instalación y la partida de esta revisión siguen pendientes de comprobación en consola.',
+    detalles: [
+      {
+        titulo: 'Instalación',
+        numerado: true,
+        puntos: [
+          'Descarga RUNIC_CURSE_DANI.zip.',
+          'Extrae Runic Curse.sh y la carpeta runiccurse dentro de ports de la microSD.',
+          'Coloca tu APK Android 1.21 ARM64, paquete com.AlexeySuslin.RunicCurse, en runiccurse/gamedata/. Debe coincidir con la revisión indicada en VERSION REQUERIDA.txt.',
+          'Abre Runic Curse desde Ports. La primera apertura prepara los datos automáticamente. Las siguientes reutilizan lo instalado.'
+        ]
+      },
+      {
+        titulo: 'Controles adicionales',
+        puntos: [
+          'SELECT + START cancela la preparación. Vuelve a abrir el port para continuar.',
+          'L3 muestra u oculta los FPS. El contador empieza oculto.'
+        ]
+      },
+      {
+        titulo: 'Actualización y partidas',
+        puntos: ['Conserva home, userdata y saves al actualizar.']
+      }
+    ],
+    nota: 'El ZIP incluye el adaptador. Debes aportar tu propio APK compatible.',
+    descarga: 'https://github.com/Riosporteador124/ports-by-dani/releases/download/runic-curse-testing/RUNIC_CURSE_DANI.zip', repositorio: ''
+  },
+  {
     id: 'pokemon-iberia', titulo: 'Pokémon Iberia', tituloDetalle: 'Pokémon Iberia — Port por Dani',
     tipo: 'port', imagen: 'assets/iberia-pantalla-titulo.webp', creditoImagen: 'Pantalla de título de Pokémon Iberia · EricLostie',
-    consolas: ['R36'], motor: 'RPG Maker XP', estado: 'En pruebas', fecha: '2026-11-07', color: 'gold', ejemplo: false,
+    consolas: ['R36S', 'R36 Max'], motor: 'RPG Maker XP', estado: 'En pruebas', fecha: '2026-11-07', color: 'gold', ejemplo: false,
     descripcion: 'Port para la familia R36. Usa los archivos de Pokémon Iberia original V2.03 para Windows y los prepara en la consola.',
     detalles: [
       {
@@ -36,7 +67,7 @@ const PROYECTOS = [
     id: 'apple-knight', titulo: '🍎 Apple Knight',
     tituloDetalle: '🍎 Apple Knight — Port por Dani (testing)',
     tipo: 'port', imagen: 'assets/apple-knight.webp', creditoImagen: 'Arte de Apple Knight · Limitless, LLC',
-    consolas: ['R36 Max'], motor: 'Unity',
+    consolas: ['R36S', 'R36 Max'], motor: 'Unity',
     estado: 'En pruebas', fecha: '2026-11-07', color: 'gold', ejemplo: false,
     descripcion: 'Mi primer port. Incluye preparación automática del juego en la consola, controles físicos y mejoras en la sincronización de hilos para reducir el consumo de CPU.',
     detalles: [
@@ -78,9 +109,7 @@ const PROYECTOS = [
     "tipo": "port",
     "imagen": "assets/cuphead-oficial.webp",
     "creditoImagen": "Carátula oficial · Studio MDHR",
-    "consolas": [
-      "R36 Max"
-    ],
+    "consolas": ["R36S", "R36 Max"],
     "motor": "Unity",
     "estado": "En pruebas",
     "fecha": "2026-11-07",
@@ -133,9 +162,7 @@ const PROYECTOS = [
     "tipo": "port",
     "imagen": "assets/elderand-oficial.webp",
     "creditoImagen": "Carátula oficial · Mantra · Sinergia Games · Graffiti Games",
-    "consolas": [
-      "R36 Max"
-    ],
+    "consolas": ["R36S", "R36 Max"],
     "motor": "Unity",
     "estado": "En pruebas",
     "fecha": "2026-11-07",
@@ -188,9 +215,7 @@ const PROYECTOS = [
     "tipo": "port",
     "imagen": "assets/blasphemous-oficial.webp",
     "creditoImagen": "Carátula oficial · The Game Kitchen · Team17",
-    "consolas": [
-      "R36 Max"
-    ],
+    "consolas": ["R36S", "R36 Max"],
     "motor": "Unity",
     "estado": "En pruebas",
     "fecha": "2026-11-07",

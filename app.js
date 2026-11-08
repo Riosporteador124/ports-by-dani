@@ -29,7 +29,7 @@ const escape = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&
 const normalized = value => String(value).toLocaleLowerCase('es').normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 const el = id => document.getElementById(id);
 const groups = [
-  { key: 'consolas', title: 'Por consola', icon: 'console', defaults: ['R36S', 'R36 Max', 'Linux ARM'] },
+  { key: 'consolas', title: 'Por consola', icon: 'console', defaults: ['R36S', 'R36 Max'] },
   { key: 'motor', title: 'Por motor', icon: 'engine', defaults: ['Unity', 'GameMaker', 'Godot', 'Otros'] },
   { key: 'estado', title: 'Estado', icon: 'layers', defaults: ['Disponible', 'En pruebas', 'En desarrollo'] }
 ];
@@ -45,7 +45,7 @@ const pages = {
   },
   info: {
     title: 'Acerca de Ports by Dani',
-    html: '<p>Catálogo de ports y adaptadores para consolas R36S, R36 Max y dispositivos Linux ARM.</p><p>Las fichas con la etiqueta <strong>Ejemplo</strong> ilustran el diseño. Los enlaces de descarga y repositorio aparecen cuando Dani los añade al catálogo.</p><a class="button" href="#inicio">Volver al inicio ' + icon('arrow') + '</a>'
+    html: '<p>Catálogo de ports y adaptadores para consolas R36S y R36 Max.</p><p>Las etiquetas indican las consolas previstas. Consulta cada ficha para ver qué pruebas se completaron.</p><a class="button" href="#inicio">Volver al inicio ' + icon('arrow') + '</a>'
   }
 };
 
