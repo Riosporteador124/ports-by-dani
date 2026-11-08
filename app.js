@@ -66,7 +66,9 @@ function projectUrl(value) {
 function tags(project) {
   const state = states[project.estado] || {style: 'dev', icon: 'info'};
   const fps = project.fps;
-  const fpsLabel = fps ? '≈' + fps.rango + ' FPS' + (fps.historico ? ' · histórico' : '') : 'FPS sin medición';
+  const fpsLabel = fps
+    ? (fps.estable ? fps.rango + ' FPS estables' : '≈' + fps.rango + ' FPS') + (fps.historico ? ' · histórico' : '')
+    : 'FPS sin medición';
   const fpsContext = fps?.contexto || 'Todavía no hay una medición publicada para este port.';
   return {
     console: project.consolas.length ? '<span class="tag">' + icon('console') + escape(project.consolas.join(' / ')) + '</span>' : '',

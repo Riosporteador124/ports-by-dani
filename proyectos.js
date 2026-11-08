@@ -2,9 +2,10 @@
 const PROYECTOS = [
   {
     id: 'ugly', titulo: 'Ugly', tituloDetalle: 'Ugly — Port por Dani',
+    fps: { rango: '30', estable: true, contexto: 'Rendimiento reportado por Dani.' },
     tipo: 'port', imagen: 'assets/proximamente-ugly.webp', creditoImagen: 'Carátula · Steam',
     consolas: ['R36S', 'R36 Max'], motor: 'Unity', estado: 'En pruebas', fecha: '2026-11-07', color: 'pink', ejemplo: false,
-    descripcion: 'Port con presentación 4:3. La instalación se comprobó en PC y queda pendiente probar esta revisión en consola.',
+    descripcion: 'Port con presentación 4:3. La instalación se comprobó en PC.',
     detalles: [
       {
         titulo: 'Instalación',
@@ -132,8 +133,8 @@ const PROYECTOS = [
   {
     "id": "cuphead",
     fps: {"rango":"30–36,5","contexto":"Medición anterior en el mapa del mundo. Falta volver a medir con el port actualizado.","historico":true},
-    "titulo": "Cuphead",
-    "tituloDetalle": "Cuphead — Port por Dani (en pruebas)",
+    "titulo": "Cuphead Android",
+    "tituloDetalle": "Cuphead Android — Port por Dani (en pruebas)",
     "tipo": "port",
     "imagen": "assets/cuphead-oficial.webp",
     "creditoImagen": "Carátula oficial · Studio MDHR",
@@ -143,7 +144,7 @@ const PROYECTOS = [
     "fecha": "2026-11-07",
     "color": "gold",
     "ejemplo": false,
-    "descripcion": "Port de Cuphead por Dani. El lanzador actualizado y sus archivos se verificaron en la microSD de la R36 Max. Queda pendiente una prueba completa en partida.",
+    "descripcion": "Port de Cuphead Android por Dani. Requiere el APK 1.0.2 ARM64. El lanzador actualizado y sus archivos se verificaron en la microSD de la R36 Max. Queda pendiente una prueba completa en partida.",
     "detalles": [
       {
         "titulo": "Imagen y rendimiento",
