@@ -49,7 +49,7 @@ const pages = {
   },
   info: {
     title: 'Acerca de Ports by Dani',
-    html: '<p>Catálogo de ports y adaptadores para consolas R36S y R36 Max.</p><p>Las etiquetas indican las consolas previstas. Consulta cada ficha para ver qué pruebas se completaron.</p><a class="button" href="#inicio">Volver al inicio ' + icon('arrow') + '</a>'
+    html: '<p>Ports y adaptadores para R36S y R36 Max compatibles con ArkOSClone y dArkOSClone.</p><p>Consulta cada ficha para conocer sus requisitos y las pruebas completadas.</p><a class="button" href="#inicio">Volver al inicio ' + icon('arrow') + '</a>'
   }
 };
 

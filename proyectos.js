@@ -1,6 +1,32 @@
 // Cada proyecto es una ficha. Copia una entrada y cambia sus datos.
 const PROYECTOS = [
   {
+    id: 'ugly', titulo: 'Ugly', tituloDetalle: 'Ugly — Port por Dani',
+    tipo: 'port', imagen: 'assets/proximamente-ugly.webp', creditoImagen: 'Carátula · Steam',
+    consolas: ['R36S', 'R36 Max'], motor: 'Unity', estado: 'En pruebas', fecha: '2026-11-07', color: 'pink', ejemplo: false,
+    descripcion: 'Port con presentación 4:3. La instalación se comprobó en PC y queda pendiente probar esta revisión en consola.',
+    detalles: [
+      {
+        titulo: 'Instalación',
+        numerado: true,
+        puntos: [
+          'Extrae Ugly.sh y la carpeta ugly directamente en ports de la microSD.',
+          'Coloca el APK Android 1.2.0 ARM64, paquete com.pid.ugly, en ugly/gamedata/. Comprueba la compilación exacta en VERSION REQUERIDA.txt.',
+          'Abre Ugly desde Ports. La primera apertura verifica y prepara los datos mostrando el progreso. Las siguientes reutilizan los recursos preparados.'
+        ]
+      },
+      {
+        titulo: 'Controles adicionales',
+        puntos: [
+          'SELECT + R3 muestra u oculta los FPS. El contador empieza oculto.',
+          'SELECT + START cancela la preparación o sale del juego. Si cancelas la preparación, vuelve a abrir el port para continuar.'
+        ]
+      }
+    ],
+    nota: 'El ZIP incluye el adaptador. Debes aportar tu propio APK compatible. Al actualizar, conserva home, userdata y saves.',
+    descarga: 'https://github.com/Riosporteador124/ports-by-dani/releases/download/ugly-testing/UGLY_DANI.zip', repositorio: ''
+  },
+  {
     id: 'runic-curse', titulo: 'Runic Curse', tituloDetalle: 'Runic Curse — Port por Dani',
     tipo: 'port', imagen: 'assets/runic-curse-oficial.webp', creditoImagen: 'Arte oficial de Runic Curse · Nintendo eShop',
     consolas: ['R36S', 'R36 Max'], motor: 'Unity', estado: 'Jugable', fecha: '2026-11-07', color: 'violet', ejemplo: false,
@@ -293,7 +319,6 @@ const PROYECTOS = [
     ["parahcuy", "Parahcuy", "gold", "Carátula · IGDB"],
     ["skul", "Skul: The Hero Slayer", "violet", "Carátula · Steam"],
     ["turnip-boy", "Turnip Boy Commits Tax Evasion", "gold", "Carátula · Steam"],
-    ["ugly", "Ugly", "pink", "Carátula · Steam"],
     ["wizard-of-legend", "Wizard of Legend", "cyan", "Carátula · Steam"],
     ["wonder-boy", "Wonder Boy: The Dragon’s Trap", "pink", "Carátula · Steam"],
     ["dwarf-journey", "Dwarf Journey", "gold", "Carátula · Steam"],
