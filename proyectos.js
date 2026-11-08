@@ -65,6 +65,7 @@ const PROYECTOS = [
   },
   {
     id: 'apple-knight', titulo: '🍎 Apple Knight',
+    fps: {"rango":"55–57","contexto":"Medido en una zona de R36 Max XiFan con dArkOS4Clone."},
     tituloDetalle: '🍎 Apple Knight — Port por Dani',
     tipo: 'port', imagen: 'assets/apple-knight.webp', creditoImagen: 'Arte de Apple Knight · Limitless, LLC',
     consolas: ['R36S', 'R36 Max'], motor: 'Unity',
@@ -104,6 +105,7 @@ const PROYECTOS = [
   },
   {
     "id": "cuphead",
+    fps: {"rango":"30–36,5","contexto":"Medición anterior en el mapa del mundo. Falta volver a medir con el port actualizado.","historico":true},
     "titulo": "Cuphead",
     "tituloDetalle": "Cuphead — Port por Dani (en pruebas)",
     "tipo": "port",
@@ -157,6 +159,7 @@ const PROYECTOS = [
   },
   {
     "id": "elderand",
+    fps: {"rango":"26–30","contexto":"Medido en los tramos registrados en R36 Max."},
     "titulo": "Elderand",
     "tituloDetalle": "Elderand — Port por Dani (en pruebas)",
     "tipo": "port",
@@ -210,6 +213,7 @@ const PROYECTOS = [
   },
   {
     "id": "blasphemous",
+    fps: {"rango":"29–30","contexto":"Medido en la escena registrada en R36 Max."},
     "titulo": "Blasphemous",
     "tituloDetalle": "Blasphemous — Port por Dani (en pruebas)",
     "tipo": "port",

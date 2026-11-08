@@ -13,6 +13,7 @@ const icons = {
   grid: '<rect x="3.5" y="3.5" width="6" height="6" rx="1"/><rect x="14.5" y="3.5" width="6" height="6" rx="1"/><rect x="3.5" y="14.5" width="6" height="6" rx="1"/><rect x="14.5" y="14.5" width="6" height="6" rx="1"/>',
   list: '<path d="M8 5h12M8 12h12M8 19h12M4 5h.01M4 12h.01M4 19h.01"/>',
   sort: '<path d="M7 20V4m-4 4 4-4 4 4m6-4v16m-4-4 4 4 4-4"/>',
+  gauge: '<path d="M3 17a9 9 0 1 1 18 0M12 15l4-5M5 17h14"/>',
   console: '<rect x="2" y="5" width="20" height="14" rx="3"/><rect x="8" y="8" width="8" height="8" rx="1"/><path d="M5 11v2m14-2h.01m0 3h.01"/>',
   engine: '<path d="m12 2 9 5v10l-9 5-9-5V7l9-5Zm0 10 9-5m-9 5L3 7m9 5v10"/>',
   layers: '<path d="m12 3 10 5-10 5L2 8l10-5Zm-10 9 10 5 10-5M2 16l10 5 10-5"/>',
@@ -62,9 +63,14 @@ function projectUrl(value) {
 
 function tags(project) {
   const state = states[project.estado] || {style: 'dev', icon: 'info'};
+  const fps = project.fps;
+  const fpsLabel = fps ? '≈' + fps.rango + ' FPS' + (fps.historico ? ' · histórico' : '') : 'FPS sin medición';
+  const fpsContext = fps?.contexto || 'Todavía no hay una medición publicada para este port.';
   return {
     console: project.consolas.length ? '<span class="tag">' + icon('console') + escape(project.consolas.join(' / ')) + '</span>' : '',
     engine: project.motor ? '<span class="tag engine">' + icon('engine') + escape(project.motor) + '</span>' : '',
+    fps: '<span class="tag fps' + (fps ? '' : ' unmeasured') + '" title="' + escape(fpsContext) + '">' +
+      icon('gauge') + escape(fpsLabel) + '</span>',
     status: project.estado ? '<span class="status ' + state.style + '">' + icon(state.icon) + escape(project.estado) + '</span>' : '',
     version: project.version ? '<span class="version">' + icon('tag') + 'v' + escape(project.version) + '</span>' : ''
   };
@@ -82,7 +88,7 @@ function card(project) {
   return '<article class="card" data-color="' + escape(project.color) + '">' +
     '<div class="cover">' + sample + (image ? '<img src="' + escape(image) + '" alt="">' : icon('game')) + '</div>' +
     '<div class="card-body"><h3><button type="button"' + open + '>' + escape(project.titulo) + '</button></h3>' +
-    '<div class="tags">' + badges.console + badges.engine + '</div>' +
+    '<div class="tags">' + badges.console + badges.engine + badges.fps + '</div>' +
     '<div class="card-meta">' + badges.version + badges.status +
     '<button type="button" class="card-cta" aria-label="Ver ficha de ' + escape(project.titulo) + '"' + open + '>' + icon('arrow') + '</button></div></div></article>';
 }

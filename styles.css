@@ -104,6 +104,8 @@ button { color: inherit; }
 .tag, .status, .version { display: inline-flex; align-items: center; gap: 4px; line-height: 1.1; font-weight: 750; font-size: .66rem; }
 .tag, .status { border: 1px solid #4aa5bc52; border-radius: 5px; background: #183347; color: #86eef8; padding: 4px; }
 .tag.engine { background: #352046; color: #e9c4ff; border-color: #9d5eb650; }
+.tag.fps { color: #b7e3ff; background: #23324d; border-color: #789ed577; }
+.tag.fps.unmeasured { color: var(--muted); background: #252239; border-color: #615a75; border-style: dashed; }
 .tag .icon, .status .icon, .version .icon { width: 12px; height: 12px; }
 .status { background: #143327; color: #88f4b9; border-color: #50c78766; }
 .status.testing { background: #3e2c19; color: #ffda82; border-color: #d9a85063; }
