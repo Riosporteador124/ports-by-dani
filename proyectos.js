@@ -1,6 +1,35 @@
 // Cada proyecto es una ficha. Copia una entrada y cambia sus datos.
 const PROYECTOS = [
   {
+    id: 'parahcuy', titulo: 'ParahCuy', tituloDetalle: 'ParahCuy — Port por Dani',
+    tipo: 'port', imagen: 'assets/proximamente-parahcuy.webp', creditoImagen: 'Carátula · IGDB',
+    consolas: ['R36S', 'R36 Max'], motor: 'GameMaker', estado: 'Jugable', fecha: '2026-11-07', color: 'gold', ejemplo: false,
+    fps: { rango: '56–60', historico: true, contexto: 'Medición del port base en R36 Max con dArkOS4Clone, en el menú y la primera zona jugable, sin contar cargas.' },
+    descripcion: 'Port con selector 4:3 o 16:9 original. En esta revisión se probaron el formato 4:3 y la salida inmediata en R36 Max. El formato 16:9 y el resto del juego quedan pendientes de verificar.',
+    detalles: [
+      {
+        titulo: 'Instalación',
+        numerado: true,
+        puntos: [
+          'Extrae ParahCuy.sh y la carpeta parahcuy juntos en ports de la microSD.',
+          'Coloca el APK Android 1.3.2 (1003002) ARM64, paquete com.sansdev_team.parahcuy, en parahcuy/gamedata/. También sirve un XAPK completo de esa revisión. Consulta VERSION REQUERIDA.txt.',
+          'Abre ParahCuy desde Ports. La primera apertura verifica y prepara los datos automáticamente, sin PC ni internet. Las siguientes reutilizan los datos preparados.'
+        ]
+      },
+      {
+        titulo: 'Controles',
+        puntos: [
+          'IZQ/DER elige 4:3 o 16:9 en la pantalla inicial. A, B o START entra al juego; SELECT vuelve a Ports.',
+          'Cruceta o joystick izquierdo para moverte. A ataca, B salta, Y lanza, X planea, R2 hace dash y START pausa.',
+          'R3 muestra u oculta los FPS. SELECT + R1 activa o desactiva el cursor. Con el cursor visible, A hace clic.',
+          'SELECT + START cancela la preparación o sale inmediatamente del juego. Si cancelas la preparación, vuelve a abrir el port para continuar. Guarda dentro del juego antes de salir.'
+        ]
+      }
+    ],
+    nota: 'El ZIP contiene el port. Debes aportar el APK compatible. Al actualizar, conserva home, userdata y saves.',
+    descarga: 'https://github.com/Riosporteador124/ports-by-dani/releases/download/parahcuy/PARAHCUY_DANI.zip', repositorio: ''
+  },
+  {
     id: 'teslagrad', titulo: 'Teslagrad', tituloDetalle: 'Teslagrad — Port por Dani',
     tipo: 'port', imagen: 'assets/proximamente-teslagrad.webp', creditoImagen: 'Carátula · Steam',
     consolas: ['R36S', 'R36 Max'], motor: 'Unity', estado: 'Jugable', fecha: '2026-11-07', color: 'cyan', ejemplo: false,
@@ -343,7 +372,6 @@ const PROYECTOS = [
     ["gta-iii-android", "GTA III Android", "violet", "Icono de la edición Android · Rockstar Games"],
     ["gta-vice-city-android", "GTA Vice City Android", "pink", "Icono de la edición Android · Rockstar Games"],
     ["haak", "HAAK", "cyan", "Carátula · Steam"],
-    ["parahcuy", "Parahcuy", "gold", "Carátula · IGDB"],
     ["skul", "Skul: The Hero Slayer", "violet", "Carátula · Steam"],
     ["turnip-boy", "Turnip Boy Commits Tax Evasion", "gold", "Carátula · Steam"],
     ["wizard-of-legend", "Wizard of Legend", "cyan", "Carátula · Steam"],
