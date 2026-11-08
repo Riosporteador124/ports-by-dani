@@ -3,8 +3,8 @@ const PROYECTOS = [
   {
     id: 'runic-curse', titulo: 'Runic Curse', tituloDetalle: 'Runic Curse — Port por Dani',
     tipo: 'port', imagen: 'assets/runic-curse-oficial.webp', creditoImagen: 'Arte oficial de Runic Curse · Nintendo eShop',
-    consolas: ['R36S', 'R36 Max'], motor: 'Unity', estado: 'En pruebas', fecha: '2026-11-07', color: 'violet', ejemplo: false,
-    descripcion: 'Port de Runic Curse para R36S y R36 Max. La instalación y la partida de esta revisión siguen pendientes de comprobación en consola.',
+    consolas: ['R36S', 'R36 Max'], motor: 'Unity', estado: 'Jugable', fecha: '2026-11-07', color: 'violet', ejemplo: false,
+    descripcion: 'Port de Runic Curse para R36S y R36 Max.',
     detalles: [
       {
         titulo: 'Instalación',
@@ -34,7 +34,7 @@ const PROYECTOS = [
   {
     id: 'pokemon-iberia', titulo: 'Pokémon Iberia', tituloDetalle: 'Pokémon Iberia — Port por Dani',
     tipo: 'port', imagen: 'assets/iberia-pantalla-titulo.webp', creditoImagen: 'Pantalla de título de Pokémon Iberia · EricLostie',
-    consolas: ['R36S', 'R36 Max'], motor: 'RPG Maker XP', estado: 'En pruebas', fecha: '2026-11-07', color: 'gold', ejemplo: false,
+    consolas: ['R36S', 'R36 Max'], motor: 'RPG Maker XP', estado: 'Jugable', fecha: '2026-11-07', color: 'gold', ejemplo: false,
     descripcion: 'Port para la familia R36. Usa los archivos de Pokémon Iberia original V2.03 para Windows y los prepara en la consola.',
     detalles: [
       {
@@ -65,10 +65,10 @@ const PROYECTOS = [
   },
   {
     id: 'apple-knight', titulo: '🍎 Apple Knight',
-    tituloDetalle: '🍎 Apple Knight — Port por Dani (testing)',
+    tituloDetalle: '🍎 Apple Knight — Port por Dani',
     tipo: 'port', imagen: 'assets/apple-knight.webp', creditoImagen: 'Arte de Apple Knight · Limitless, LLC',
     consolas: ['R36S', 'R36 Max'], motor: 'Unity',
-    estado: 'En pruebas', fecha: '2026-11-07', color: 'gold', ejemplo: false,
+    estado: 'Jugable', fecha: '2026-11-07', color: 'gold', ejemplo: false,
     descripcion: 'Mi primer port. Incluye preparación automática del juego en la consola, controles físicos y mejoras en la sincronización de hilos para reducir el consumo de CPU.',
     detalles: [
       {

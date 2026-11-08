@@ -31,9 +31,10 @@ const el = id => document.getElementById(id);
 const groups = [
   { key: 'consolas', title: 'Por consola', icon: 'console', defaults: ['R36S', 'R36 Max'] },
   { key: 'motor', title: 'Por motor', icon: 'engine', defaults: ['Unity', 'GameMaker', 'Godot', 'Otros'] },
-  { key: 'estado', title: 'Estado', icon: 'layers', defaults: ['Disponible', 'En pruebas', 'En desarrollo'] }
+  { key: 'estado', title: 'Estado', icon: 'layers', defaults: ['Jugable', 'Disponible', 'En pruebas', 'En desarrollo'] }
 ];
 const states = {
+  'Jugable': { style: 'available', icon: 'check' },
   'Disponible': { style: 'available', icon: 'check' },
   'En pruebas': { style: 'testing', icon: 'flask' },
   'En desarrollo': { style: 'dev', icon: 'tool' }
