@@ -229,3 +229,9 @@ dialog::backdrop { background: #070510cf; }
 @media (min-width: 951px) {
   .nav { flex-wrap: wrap; }
 }
+
+.cover.upcoming img,
+.detail-inner > img[src*="/proximamente-"] { object-fit: contain; }
+.detail-inner > img[src*="/proximamente-"] { background: #171225; }
+.cover.upcoming img[src$="/proximamente-poketale.webp"],
+.detail-inner > img[src$="/proximamente-poketale.webp"] { object-fit: cover; }

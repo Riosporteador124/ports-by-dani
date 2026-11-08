@@ -266,18 +266,19 @@ const PROYECTOS = [
     "repositorio": ""
   },
   ...[
-    ['dandara', 'Dandara', 'pink'],
+    ['dandara', 'Dandara', 'pink', 'Carátula · Steam'],
     ['poketale', 'Poketale', 'violet'],
     ['pokemon-anil', 'Pokémon Añil', 'cyan'],
-    ['pokemon-tectonic', 'Pokémon Tectonic', 'gold'],
+    ['pokemon-tectonic', 'Pokémon Tectonic', 'gold', 'Logo · Sitio oficial de Pokémon Tectonic'],
     ['pokemon-bizarre', 'Pokémon Bizarre', 'pink'],
     ['pokemon-consonancia', 'Pokémon Consonancia', 'violet'],
     ['pokemon-frontera-digital', 'Pokémon Frontera Digital', 'cyan'],
     ['pokemon-titan', 'Pokémon Titán', 'gold'],
     ['pokemon-gadir', 'Pokémon Gadir', 'pink'],
-    ['teslagrad', 'Teslagrad', 'cyan']
-  ].map(([id, titulo, color]) => ({
+    ['teslagrad', 'Teslagrad', 'cyan', 'Carátula · Steam']
+  ].map(([id, titulo, color, creditoImagen = 'Carátula · Whack a Hack']) => ({
     id, titulo, color, tipo: 'port', estado: 'Próximamente',
+    imagen: `assets/proximamente-${id}.webp`, creditoImagen,
     consolas: ['R36S', 'R36 Max'], fecha: '',
     descripcion: 'Port anunciado para R36S y R36 Max. La fecha de publicación está por anunciar.'
   }))
