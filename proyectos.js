@@ -296,7 +296,15 @@ const PROYECTOS = [
     ["ugly", "Ugly", "pink", "Carátula · Steam"],
     ["wizard-of-legend", "Wizard of Legend", "cyan", "Carátula · Steam"],
     ["wonder-boy", "Wonder Boy: The Dragon’s Trap", "pink", "Carátula · Steam"],
-    ["dwarf-journey", "Dwarf Journey", "gold", "Carátula · Steam"]
+    ["dwarf-journey", "Dwarf Journey", "gold", "Carátula · Steam"],
+    ["unruly-heroes", "Unruly Heroes", "pink", "Carátula · Steam"],
+    ["river-city-girls", "River City Girls", "violet", "Carátula · Steam"],
+    ["evoland-1", "Evoland 1", "gold", "Carátula · Steam"],
+    ["fahrenheit", "Fahrenheit: Indigo Prophecy Remastered", "cyan", "Carátula · Steam"],
+    ["advent-neon", "Advent NEON", "cyan", "Carátula · Steam"],
+    ["inmost", "INMOST", "violet", "Carátula · Steam"],
+    ["the-swords-of-ditto", "The Swords of Ditto: Mormo’s Curse", "gold", "Carátula · Steam"],
+    ["greak-memories-of-azur", "Greak: Memories of Azur", "pink", "Carátula · Steam"]
   ].map(([id, titulo, color, creditoImagen = 'Carátula · Whack a Hack']) => ({
     id, titulo, color, tipo: 'port', estado: 'Próximamente',
     imagen: creditoImagen ? `assets/proximamente-${id}.webp` : '', creditoImagen,
