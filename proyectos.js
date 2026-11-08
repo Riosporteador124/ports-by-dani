@@ -235,12 +235,5 @@ const PROYECTOS = [
     "nota": "El ZIP contiene únicamente el adaptador. Debes aportar tu propio APK compatible.",
     "descarga": "https://github.com/Riosporteador124/ports-by-dani/releases/download/r36max-testing-2026-11-07/BLASPHEMOUS_DANI.zip",
     "repositorio": ""
-  },
-  {
-    id: 'fifa', titulo: 'FIFA 14 Android', tipo: 'port', imagen: 'assets/fifa.webp',
-    consolas: ['R36S', 'Linux ARM'], motor: 'Otros', version: '1.4.0',
-    estado: 'Disponible', fecha: '2026-11-01', color: 'cyan', ejemplo: true,
-    descripcion: 'Ficha de muestra para un proyecto relacionado con la versión móvil de FIFA 14.',
-    descarga: '', repositorio: ''
   }
 ];
