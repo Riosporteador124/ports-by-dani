@@ -1,6 +1,33 @@
 // Cada proyecto es una ficha. Copia una entrada y cambia sus datos.
 const PROYECTOS = [
   {
+    id: 'teslagrad', titulo: 'Teslagrad', tituloDetalle: 'Teslagrad — Port por Dani',
+    tipo: 'port', imagen: 'assets/proximamente-teslagrad.webp', creditoImagen: 'Carátula · Steam',
+    consolas: ['R36S', 'R36 Max'], motor: 'Unity', estado: 'Jugable', fecha: '2026-11-07', color: 'cyan', ejemplo: false,
+    fps: { rango: '26–30', contexto: 'Estimación indicada por Dani. Esta revisión está pendiente de probarse en consola.' },
+    descripcion: 'Port con presentación 4:3 y un rendimiento estimado de 26–30 FPS. La instalación se comprobó en PC. Queda pendiente probar esta revisión en consola.',
+    detalles: [
+      {
+        titulo: 'Instalación',
+        numerado: true,
+        puntos: [
+          'Extrae Teslagrad.sh y la carpeta teslagrad directamente en ports de la microSD.',
+          'Coloca el APK Android 2.2 ARM64 y su OBB main.96, paquete com.Rain.Teslagrad, en teslagrad/gamedata/. También sirve un XAPK completo de la misma revisión. Consulta VERSION REQUERIDA.txt.',
+          'Abre Teslagrad desde Ports. La primera apertura verifica y prepara los datos mostrando el progreso. Las siguientes reutilizan los recursos preparados.'
+        ]
+      },
+      {
+        titulo: 'Controles adicionales',
+        puntos: [
+          'SELECT + R3 muestra u oculta los FPS. El contador empieza oculto.',
+          'SELECT + START cancela la preparación o sale del juego. Si cancelas la preparación, vuelve a abrir el port para continuar.'
+        ]
+      }
+    ],
+    nota: 'El ZIP incluye el adaptador. Debes aportar los archivos compatibles del juego. Al actualizar, conserva home, userdata y saves.',
+    descarga: 'https://github.com/Riosporteador124/ports-by-dani/releases/download/teslagrad/TESLAGRAD_DANI.zip', repositorio: ''
+  },
+  {
     id: 'ugly', titulo: 'Ugly', tituloDetalle: 'Ugly — Port por Dani',
     fps: { rango: '30', estable: true, contexto: 'Rendimiento reportado por Dani.' },
     tipo: 'port', imagen: 'assets/proximamente-ugly.webp', creditoImagen: 'Carátula · Steam',
@@ -302,7 +329,6 @@ const PROYECTOS = [
     ['pokemon-frontera-digital', 'Pokémon Frontera Digital', 'cyan'],
     ['pokemon-titan', 'Pokémon Titán', 'gold'],
     ['pokemon-gadir', 'Pokémon Gadir', 'pink'],
-    ['teslagrad', 'Teslagrad', 'cyan', 'Carátula · Steam'],
     ["fifa-14-android", "FIFA 14 Android", "cyan", "Captura de FIFA 14 Android · Uptodown"],
     ["volhem", "Volhem", "violet", null],
     ["pokemon-z", "Pokémon Z", "gold", "Carátula · Whack a Hack"],
