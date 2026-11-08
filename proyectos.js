@@ -2,7 +2,7 @@
 const PROYECTOS = [
   {
     id: 'pokemon-iberia', titulo: 'Pokémon Iberia', tituloDetalle: 'Pokémon Iberia — Port por Dani',
-    tipo: 'port', imagen: 'assets/iberia-oficial.webp', creditoImagen: 'Carátula original de Pokémon Iberia · EricLostie',
+    tipo: 'port', imagen: 'assets/iberia-pantalla-titulo.webp', creditoImagen: 'Pantalla de título de Pokémon Iberia · EricLostie',
     consolas: ['R36'], motor: 'RPG Maker XP', estado: 'En pruebas', fecha: '2026-11-07', color: 'gold', ejemplo: false,
     descripcion: 'Port para la familia R36. Usa los archivos de Pokémon Iberia original V2.03 para Windows y los prepara en la consola.',
     detalles: [

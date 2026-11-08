@@ -208,9 +208,9 @@ dialog::backdrop { background: #070510cf; }
   .cards.list .card-body { grid-template-rows: auto 1fr auto; }
 }
 
-/* Keep the original square cover visible in the wide card and detail image. */
-.cover img[src$="/iberia-oficial.webp"],
-.detail-inner > img[src$="/iberia-oficial.webp"] {
+/* Keep the original title screen visible in the wide card and detail image. */
+.cover img[src$="/iberia-pantalla-titulo.webp"],
+.detail-inner > img[src$="/iberia-pantalla-titulo.webp"] {
   object-fit: contain;
-  background: #2b171a;
+  background: #171f39;
 }
