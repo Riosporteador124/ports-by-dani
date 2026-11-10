@@ -1,6 +1,137 @@
 // Cada proyecto es una ficha. Copia una entrada y cambia sus datos.
 const PROYECTOS = [
   {
+    "id": "dead-station-2",
+    "titulo": "Dead Station 2",
+    "tituloDetalle": "Dead Station 2 — Port por Dani",
+    "tipo": "port",
+    "imagen": "assets/proximamente-dead-station-2.webp",
+    "creditoImagen": "Icono oficial · Google Play",
+    "consolas": [
+      "R36S",
+      "R36 Max"
+    ],
+    "motor": "GameMaker",
+    "estado": "En pruebas",
+    "fecha": "2026-11-10",
+    "color": "cyan",
+    "ejemplo": false,
+    "descripcion": "Actualización del port Android 2.0.0 para la revisión con mando y texturas ASTC. Requiere datos ya preparados del port anterior. La preparación desde un APK original y la prueba de este paquete en consola siguen pendientes.",
+    "detalles": [
+      {
+        "titulo": "Instalación",
+        "numerado": true,
+        "puntos": [
+          "Extrae Dead Station 2.sh y la carpeta deadstation2 juntos en ports de la microSD.",
+          "Pon deadstation2r36maxmando-paquete-2361b440.zip en deadstation2/gamedata/. También puedes copiar assets/game.apk y textures-astc/ ya preparados a esa carpeta, o conservar la carpeta anterior deadstation2r36maxmando/ para que el lanzador la reconozca.",
+          "Abre Dead Station 2 desde Ports. La primera apertura verifica e importa los datos. Las siguientes reutilizan lo instalado."
+        ]
+      },
+      {
+        "titulo": "Controles y partidas",
+        "puntos": [
+          "SELECT + R3 muestra u oculta los FPS. El contador empieza oculto.",
+          "SELECT + START cancela la preparación o solicita salir del juego. Si cancelas la preparación, vuelve a abrir el port para continuar.",
+          "Conserva saves al actualizar para mantener tus partidas."
+        ]
+      }
+    ],
+    "nota": "El ZIP contiene el adaptador. Para instalarlo, aporta los datos compatibles del port anterior.",
+    "descarga": "https://github.com/Riosporteador124/ports-by-dani/releases/download/ports-2026-11-10/DEAD_STATION_2_ADAPTADOR_DANI.zip",
+    "repositorio": ""
+  },
+  {
+    "id": "super-mario-2d-world-dx",
+    "titulo": "Super Mario 2D World DX",
+    "tituloDetalle": "Super Mario 2D World DX — Port por Dani",
+    "tipo": "port",
+    "imagen": "assets/sm2dw.webp",
+    "creditoImagen": "Carátula del fangame · Kotaku",
+    "consolas": [
+      "R36S",
+      "R36 Max"
+    ],
+    "motor": "GameMaker",
+    "estado": "En pruebas",
+    "fecha": "2026-11-10",
+    "color": "gold",
+    "ejemplo": false,
+    "fps": {
+      "rango": "59–59,6",
+      "historico": true,
+      "contexto": "Medición del port base en mountain_bell. La revisión nueva está pendiente de confirmación en consola."
+    },
+    "descripcion": "Port del fangame con imagen 4:3 centrada, modo rendimiento y mandos físicos. Esta revisión se verificó en PC y queda pendiente probarla en consola.",
+    "detalles": [
+      {
+        "titulo": "Instalación",
+        "numerado": true,
+        "puntos": [
+          "Extrae Super Mario 2D World DX.sh y la carpeta sm2dw juntos en ports de la microSD.",
+          "Pon en sm2dw/gamedata/ el APK Android Hotfix 1.5 (Gama Baja-Media), v1.0.2.4 (2001026) ARMv7, paquete com.creativearaya.sonic2sms. También sirve un XAPK completo con ese APK. Consulta VERSION REQUERIDA.txt para comprobar la edición.",
+          "Abre Super Mario 2D World DX desde Ports. La primera apertura prepara los datos automáticamente, sin PC ni internet. Las siguientes reutilizan lo preparado."
+        ]
+      },
+      {
+        "titulo": "Controles y partidas",
+        "puntos": [
+          "Cruceta o joystick izquierdo para moverte. A/B saltan o confirman. X/Y sirven para correr y hacer acciones.",
+          "R1 activa la carrera automática, SELECT usa el objeto de reserva y START pausa.",
+          "R3 muestra u oculta los FPS. SELECT + START cancela la preparación o sale del juego. Vuelve a abrir para reanudar la preparación.",
+          "Conserva sm2dw/saves/ al actualizar."
+        ]
+      }
+    ],
+    "nota": "El ZIP contiene el adaptador. Aporta tu APK compatible. El firmware debe admitir ejecución y gráficos ARM32 en un sistema ARM64.",
+    "descarga": "https://github.com/Riosporteador124/ports-by-dani/releases/download/ports-2026-11-10/SUPER_MARIO_2D_WORLD_DX_ADAPTADOR_DANI.zip",
+    "repositorio": ""
+  },
+  {
+    "id": "afterplace",
+    "titulo": "Afterplace",
+    "tituloDetalle": "Afterplace — Port por Dani",
+    "tipo": "port",
+    "imagen": "assets/afterplace.webp",
+    "creditoImagen": "Carátula · Steam",
+    "consolas": [
+      "R36S",
+      "R36 Max"
+    ],
+    "motor": "Unity",
+    "estado": "En pruebas",
+    "fecha": "2026-11-10",
+    "color": "violet",
+    "ejemplo": false,
+    "fps": {
+      "rango": "25–32",
+      "historico": true,
+      "contexto": "Pruebas previas de R36 Max en exteriores y bosque. En interiores pequeños se registraron 43–46 FPS y en el título, aproximadamente 58 FPS."
+    },
+    "descripcion": "La imagen se adapta al panel 1:1 o 4:3 conservando proporciones, interfaz y textos. En pruebas previas de R36 Max se registraron ≈58 FPS en el título, 43–46 en interiores pequeños y 25–32 en exteriores. Se observaron tirones ocasionales en zonas pesadas y queda pendiente validar este paquete en consola.",
+    "detalles": [
+      {
+        "titulo": "Instalación",
+        "numerado": true,
+        "puntos": [
+          "Extrae Afterplace.sh y la carpeta afterplace juntos en ports de la microSD.",
+          "Coloca tu APK Android 1.2.22 (226) ARM64, paquete com.kice.afterplace, en afterplace/gamedata/. También sirve un XAPK completo de esa revisión. Consulta VERSION REQUERIDA.txt.",
+          "Abre Afterplace desde Ports. La primera apertura prepara los datos automáticamente, sin PC ni internet. Las siguientes reutilizan lo preparado."
+        ]
+      },
+      {
+        "titulo": "Controles y partidas",
+        "puntos": [
+          "SELECT + R3 muestra u oculta los FPS. El contador empieza oculto.",
+          "SELECT + START cancela la preparación o sale guardando. Si cancelas la preparación, vuelve a abrir para continuar.",
+          "Conserva afterplace/home/ al actualizar para mantener tus partidas."
+        ]
+      }
+    ],
+    "nota": "El ZIP contiene el adaptador. Aporta tu APK compatible.",
+    "descarga": "https://github.com/Riosporteador124/ports-by-dani/releases/download/ports-2026-11-10/AFTERPLACE_ADAPTADOR_DANI.zip",
+    "repositorio": ""
+  },
+  {
     "id": "pokemon-anil",
     "titulo": "Pokémon Añil",
     "tituloDetalle": "Pokémon Añil — Port por Dani",
@@ -757,7 +888,6 @@ const PROYECTOS = [
     ["9-years-of-shadows", "9 Years of Shadows", "violet", "Carátula · Steam"],
     ["pvz-fusion", "PvZ Fusion", "gold", "Captura de PvZ Fusion · Pikiran Rakyat"],
     ["dark-raider", "Dark Raider", "pink", "Carátula · Steam"],
-    ["dead-station-2", "Dead Station 2", "cyan", "Icono oficial · Google Play"],
     ["evoland-2", "Evoland 2", "gold", "Carátula · Steam"],
     ["grimvalor", "Grimvalor", "pink", "Arte de Grimvalor · Nintendo eShop"],
     ["gta-iii-android", "GTA III Android", "violet", "Icono de la edición Android · Rockstar Games"],
