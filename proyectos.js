@@ -1110,6 +1110,8 @@ const PROYECTOS = [
     "repositorio": ""
   },
   ...[
+    ["dolphin-blue","Dolphin Blue","cyan","Arte arcade de Sammy · The Arcade Flyer Archive"],
+    ["demon-front","Demon Front","pink","Arte arcade de IGS · The Arcade Flyer Archive"],
     ["new-super-mario-bros-wii","New Super Mario Bros. Wii","gold","Carátula de Wii · Super Mario Wiki"],
     ["resident-evil-code-veronica-x-ps2","Resident Evil Code: Veronica X (PS2)","pink","Carátula de PS2 · Retro Games Best"],
     ['poketale', 'Poketale', 'violet'],
