@@ -1,6 +1,227 @@
 // Cada proyecto es una ficha. Copia una entrada y cambia sus datos.
 const PROYECTOS = [
   {
+    "id": "dandara",
+    "titulo": "Dandara",
+    "tituloDetalle": "Dandara — Port por Dani",
+    "tipo": "port",
+    "imagen": "assets/proximamente-dandara.webp",
+    "creditoImagen": "Carátula · Steam",
+    "consolas": [
+      "R36S",
+      "R36 Max"
+    ],
+    "motor": "Unity",
+    "estado": "Jugable",
+    "fecha": "2026-11-10",
+    "color": "pink",
+    "ejemplo": false,
+    "fps": {
+      "rango": "28–30",
+      "contexto": "Rendimiento reportado por Dani."
+    },
+    "descripcion": "Port de Android 1.5.24 ARM64. Esta edición reutiliza los datos preparados del port anterior de Dani.",
+    "detalles": [
+      {
+        "titulo": "Instalación",
+        "numerado": true,
+        "puntos": [
+          "Extrae Dandara.sh y la carpeta dandara juntos en ports de la microSD.",
+          "Coloca DANDARA-DANI.zip en dandara/gamedata/. También puedes copiar allí las carpetas assets y lib preparadas, incluido runtime-assets.apk. Consulta VERSION REQUERIDA.txt.",
+          "Abre Dandara desde Ports. La primera apertura verifica y prepara los datos. Las siguientes reutilizan lo instalado."
+        ]
+      },
+      {
+        "titulo": "Controles y partidas",
+        "puntos": [
+          "SELECT + R3 muestra u oculta los FPS. El contador empieza oculto.",
+          "SELECT + START cancela la preparación. Vuelve a abrir el port para continuar.",
+          "Conserva home, userdata y saves al actualizar."
+        ]
+      }
+    ],
+    "nota": "El ZIP incluye el port. Aporta los datos compatibles del juego.",
+    "descarga": "https://github.com/Riosporteador124/ports-by-dani/releases/download/ports-2026-11-10-2/DANDARA__DANI.zip",
+    "repositorio": ""
+  },
+  {
+    "id": "dwarf-journey",
+    "titulo": "Dwarf Journey",
+    "tituloDetalle": "Dwarf Journey — Port por Dani",
+    "tipo": "port",
+    "imagen": "assets/proximamente-dwarf-journey.webp",
+    "creditoImagen": "Carátula · Steam",
+    "consolas": [
+      "R36S",
+      "R36 Max"
+    ],
+    "motor": "Unity",
+    "estado": "Jugable",
+    "fecha": "2026-11-10",
+    "color": "gold",
+    "ejemplo": false,
+    "fps": {
+      "rango": "26–30",
+      "contexto": "Rendimiento reportado por Dani."
+    },
+    "descripcion": "Port de la edición Android con presentación 4:3.",
+    "detalles": [
+      {
+        "titulo": "Instalación",
+        "numerado": true,
+        "puntos": [
+          "Extrae Dwarf Journey.sh y la carpeta dwarfjourney juntos en ports de la microSD.",
+          "Coloca tu APK Android 1.3.82 ARM64, paquete com.OrubeGameStudio.DwarfJourney, en dwarfjourney/gamedata/. También sirve un XAPK completo de esa revisión.",
+          "Abre Dwarf Journey desde Ports. La primera apertura verifica y prepara los datos. Las siguientes reutilizan lo instalado."
+        ]
+      },
+      {
+        "titulo": "Controles y partidas",
+        "puntos": [
+          "SELECT + R3 muestra u oculta los FPS. El contador empieza oculto.",
+          "SELECT + START cancela la preparación. Vuelve a abrir el port para continuar.",
+          "Conserva home y userdata al actualizar."
+        ]
+      }
+    ],
+    "nota": "El ZIP incluye el port. Aporta los datos compatibles del juego.",
+    "descarga": "https://github.com/Riosporteador124/ports-by-dani/releases/download/ports-2026-11-10-2/DWARF_JOURNEY_ADAPTADOR_DANI.zip",
+    "repositorio": ""
+  },
+  {
+    "id": "the-swords-of-ditto",
+    "titulo": "The Swords of Ditto: Mormo’s Curse",
+    "tituloDetalle": "The Swords of Ditto: Mormo’s Curse — Port por Dani",
+    "tipo": "port",
+    "imagen": "assets/proximamente-the-swords-of-ditto.webp",
+    "creditoImagen": "Carátula · Steam",
+    "consolas": [
+      "R36S",
+      "R36 Max"
+    ],
+    "motor": "GameMaker",
+    "estado": "Jugable",
+    "fecha": "2026-11-10",
+    "color": "gold",
+    "ejemplo": false,
+    "fps": {
+      "rango": "33–45",
+      "contexto": "Rendimiento reportado por Dani."
+    },
+    "descripcion": "Port de Android 1.1.1 ARM64 con texturas ASTC y audio PCM a 24 kHz. Requiere los datos preparados de la revisión indicada del port de Dani.",
+    "detalles": [
+      {
+        "titulo": "Instalación",
+        "numerado": true,
+        "puntos": [
+          "Extrae The Swords of Ditto.sh y la carpeta ditto-arkos juntos en ports de la microSD.",
+          "Coloca ditto-arkos-datos-preparados.zip en ditto-arkos/gamedata/. El ZIP de datos debe contener game.apk, lib/ y las 591 páginas PVR en userdata/textures/.",
+          "Abre The Swords of Ditto desde Ports. La primera apertura verifica y prepara los datos. Las siguientes reutilizan lo instalado."
+        ]
+      },
+      {
+        "titulo": "Controles y partidas",
+        "puntos": [
+          "SELECT + R3 muestra u oculta los FPS. El contador empieza oculto.",
+          "SELECT + START cancela la preparación o vuelve a Ports con una pulsación breve durante la partida. Vuelve a abrir el port para continuar la preparación.",
+          "Guarda desde el juego antes de salir y conserva userdata, incluida userdata/Savefiles, al actualizar."
+        ]
+      }
+    ],
+    "nota": "El ZIP incluye el port. Aporta los datos compatibles del juego.",
+    "descarga": "https://github.com/Riosporteador124/ports-by-dani/releases/download/ports-2026-11-10-2/THE_SWORDS_OF_DITTO_ADAPTADOR_DANI.zip",
+    "repositorio": ""
+  },
+  {
+    "id": "evoland-2",
+    "titulo": "Evoland 2",
+    "tituloDetalle": "Evoland 2 — Port por Dani",
+    "tipo": "port",
+    "imagen": "assets/proximamente-evoland-2.webp",
+    "creditoImagen": "Carátula · Steam",
+    "consolas": [
+      "R36S",
+      "R36 Max"
+    ],
+    "motor": "Otros",
+    "estado": "Jugable",
+    "fecha": "2026-11-10",
+    "color": "gold",
+    "ejemplo": false,
+    "fps": {
+      "rango": "40–45",
+      "estable": true,
+      "contexto": "Rendimiento reportado por Dani."
+    },
+    "descripcion": "Port de la edición Android con HashLink y SDL2.",
+    "detalles": [
+      {
+        "titulo": "Instalación",
+        "numerado": true,
+        "puntos": [
+          "Extrae Evoland 2.sh y la carpeta evoland2 juntos en ports de la microSD.",
+          "Coloca tu APK Android 2.4.0 ARM64, o un XAPK completo de esa revisión, en evoland2/gamedata/. Consulta VERSION REQUERIDA.txt.",
+          "Abre Evoland 2 desde Ports. La primera apertura verifica y prepara los datos. Las siguientes reutilizan lo instalado."
+        ]
+      },
+      {
+        "titulo": "Controles y partidas",
+        "puntos": [
+          "R3 muestra u oculta los FPS. El contador empieza oculto.",
+          "SELECT + START cancela la preparación. Vuelve a abrir el port para continuar.",
+          "Conserva home, userdata y saves al actualizar."
+        ]
+      }
+    ],
+    "nota": "El ZIP incluye el port. Aporta los datos compatibles del juego.",
+    "descarga": "https://github.com/Riosporteador124/ports-by-dani/releases/download/ports-2026-11-10-2/EVOLAND_2_ADAPTADOR_DANI.zip",
+    "repositorio": ""
+  },
+  {
+    "id": "my-memory-of-us",
+    "titulo": "My Memory of Us",
+    "tituloDetalle": "My Memory of Us — Port por Dani",
+    "tipo": "port",
+    "imagen": "assets/my-memory-of-us.webp",
+    "creditoImagen": "Carátula · Steam",
+    "consolas": [
+      "R36S",
+      "R36 Max"
+    ],
+    "motor": "Unity",
+    "estado": "Jugable",
+    "fecha": "2026-11-10",
+    "color": "violet",
+    "ejemplo": false,
+    "fps": {
+      "rango": "24–30",
+      "contexto": "Rendimiento reportado por Dani."
+    },
+    "descripcion": "Port con imagen 4:3 centrada. Salta el vídeo de introducción para entrar al juego. Las notas del paquete documentan el arranque hasta la primera zona del metro.",
+    "detalles": [
+      {
+        "titulo": "Instalación",
+        "numerado": true,
+        "puntos": [
+          "Extrae MyMemoryOfUs.sh y la carpeta mymemoryofus juntos en ports de la microSD.",
+          "Coloca tu APK Android 1.0 (21) ARM64 y el OBB main.21.com.vpltd.mymemoryofusandroid.obb en mymemoryofus/gamedata/. También sirve el XAPK completo de esa edición o el APK junto con el ZIP de caché que contiene el OBB.",
+          "Abre MyMemoryOfUs desde Ports. La primera apertura verifica y prepara los datos. Las siguientes reutilizan lo instalado."
+        ]
+      },
+      {
+        "titulo": "Controles y partidas",
+        "puntos": [
+          "SELECT + R3 muestra u oculta los FPS. El contador empieza oculto.",
+          "SELECT + START cancela la preparación. Vuelve a abrir el port para continuar.",
+          "Conserva mymemoryofus/home/ al actualizar para mantener tus partidas."
+        ]
+      }
+    ],
+    "nota": "El ZIP incluye el port. Aporta los datos compatibles del juego.",
+    "descarga": "https://github.com/Riosporteador124/ports-by-dani/releases/download/ports-2026-11-10-2/MY_MEMORY_OF_US_ADAPTADOR_DANI.zip",
+    "repositorio": ""
+  },
+  {
     "id": "dead-station-2",
     fps: {"rango":"30","estable":true,"contexto":"Rendimiento reportado por Dani."},
     "titulo": "Dead Station 2",
@@ -892,7 +1113,6 @@ const PROYECTOS = [
   ...[
     ["new-super-mario-bros-wii","New Super Mario Bros. Wii","gold","Carátula de Wii · Super Mario Wiki"],
     ["resident-evil-code-veronica-x-ps2","Resident Evil Code: Veronica X (PS2)","pink","Carátula de PS2 · Retro Games Best"],
-    ['dandara', 'Dandara', 'pink', 'Carátula · Steam'],
     ['poketale', 'Poketale', 'violet'],
     ["fifa-14-android", "FIFA 14 Android", "cyan", "Captura de FIFA 14 Android · Uptodown"],
     ["volhem", "Volhem", "violet", null],
@@ -901,7 +1121,6 @@ const PROYECTOS = [
     ["9-years-of-shadows", "9 Years of Shadows", "violet", "Carátula · Steam"],
     ["pvz-fusion", "PvZ Fusion", "gold", "Captura de PvZ Fusion · Pikiran Rakyat"],
     ["dark-raider", "Dark Raider", "pink", "Carátula · Steam"],
-    ["evoland-2", "Evoland 2", "gold", "Carátula · Steam", "40–60"],
     ["grimvalor", "Grimvalor", "pink", "Arte de Grimvalor · Nintendo eShop"],
     ["gta-iii-android", "GTA III Android", "violet", "Icono de la edición Android · Rockstar Games"],
     ["gta-vice-city-android", "GTA Vice City Android", "pink", "Icono de la edición Android · Rockstar Games"],
@@ -909,14 +1128,12 @@ const PROYECTOS = [
     ["skul", "Skul: The Hero Slayer", "violet", "Carátula · Steam"],
     ["turnip-boy", "Turnip Boy Commits Tax Evasion", "gold", "Carátula · Steam"],
     ["wizard-of-legend", "Wizard of Legend", "cyan", "Carátula · Steam"],
-    ["dwarf-journey", "Dwarf Journey", "gold", "Carátula · Steam"],
     ["unruly-heroes", "Unruly Heroes", "pink", "Carátula · Steam"],
     ["river-city-girls", "River City Girls", "violet", "Carátula · Steam"],
     ["evoland-1", "Evoland 1", "gold", "Carátula · Steam", "40–60"],
     ["fahrenheit", "Fahrenheit: Indigo Prophecy Remastered", "cyan", "Carátula · Steam"],
     ["advent-neon", "Advent NEON", "cyan", "Carátula · Steam"],
     ["inmost", "INMOST", "violet", "Carátula · Steam"],
-    ["the-swords-of-ditto", "The Swords of Ditto: Mormo’s Curse", "gold", "Carátula · Steam"],
     ["greak-memories-of-azur", "Greak: Memories of Azur", "pink", "Carátula · Steam"]
   ].map(([id, titulo, color, creditoImagen = 'Carátula · Whack a Hack', rangoFps]) => ({
     id, titulo, color, tipo: 'port', estado: 'Próximamente',
