@@ -2,6 +2,7 @@
 const PROYECTOS = [
   {
     "id": "dead-station-2",
+    fps: {"rango":"30","estable":true,"contexto":"Rendimiento reportado por Dani."},
     "titulo": "Dead Station 2",
     "tituloDetalle": "Dead Station 2 — Port por Dani",
     "tipo": "port",
@@ -12,7 +13,7 @@ const PROYECTOS = [
       "R36 Max"
     ],
     "motor": "GameMaker",
-    "estado": "En pruebas",
+    "estado": "Jugable",
     "fecha": "2026-11-10",
     "color": "cyan",
     "ejemplo": false,
@@ -52,13 +53,12 @@ const PROYECTOS = [
       "R36 Max"
     ],
     "motor": "GameMaker",
-    "estado": "En pruebas",
+    "estado": "Jugable",
     "fecha": "2026-11-10",
     "color": "gold",
     "ejemplo": false,
     "fps": {
       "rango": "59–59,6",
-      "historico": true,
       "contexto": "Medición del port base en mountain_bell. La revisión nueva está pendiente de confirmación en consola."
     },
     "descripcion": "Port del fangame con imagen 4:3 centrada, modo rendimiento y mandos físicos. Esta revisión se verificó en PC y queda pendiente probarla en consola.",
@@ -98,13 +98,12 @@ const PROYECTOS = [
       "R36 Max"
     ],
     "motor": "Unity",
-    "estado": "En pruebas",
+    "estado": "Jugable",
     "fecha": "2026-11-10",
     "color": "violet",
     "ejemplo": false,
     "fps": {
       "rango": "25–32",
-      "historico": true,
       "contexto": "Pruebas previas de R36 Max en exteriores y bosque. En interiores pequeños se registraron 43–46 FPS y en el título, aproximadamente 58 FPS."
     },
     "descripcion": "La imagen se adapta al panel 1:1 o 4:3 conservando proporciones, interfaz y textos. En pruebas previas de R36 Max se registraron ≈58 FPS en el título, 43–46 en interiores pequeños y 25–32 en exteriores. Se observaron tirones ocasionales en zonas pesadas y queda pendiente validar este paquete en consola.",
@@ -133,6 +132,7 @@ const PROYECTOS = [
   },
   {
     "id": "pokemon-anil",
+    fps: {"rango":"25–40","contexto":"Rendimiento reportado por Dani."},
     "titulo": "Pokémon Añil",
     "tituloDetalle": "Pokémon Añil — Port por Dani",
     "tipo": "port",
@@ -143,7 +143,7 @@ const PROYECTOS = [
       "R36 Max"
     ],
     "motor": "RPG Maker XP",
-    "estado": "En pruebas",
+    "estado": "Jugable",
     "fecha": "2026-11-07",
     "color": "cyan",
     "ejemplo": false,
@@ -173,6 +173,7 @@ const PROYECTOS = [
   },
   {
     "id": "pokemon-bizarre",
+    fps: {"rango":"25–40","contexto":"Rendimiento reportado por Dani."},
     "titulo": "Pokémon Bizarre",
     "tituloDetalle": "Pokémon Bizarre — Port por Dani",
     "tipo": "port",
@@ -183,7 +184,7 @@ const PROYECTOS = [
       "R36 Max"
     ],
     "motor": "RPG Maker XP",
-    "estado": "En pruebas",
+    "estado": "Jugable",
     "fecha": "2026-11-07",
     "color": "pink",
     "ejemplo": false,
@@ -213,6 +214,7 @@ const PROYECTOS = [
   },
   {
     "id": "pokemon-consonancia",
+    fps: {"rango":"25–40","contexto":"Rendimiento reportado por Dani."},
     "titulo": "Pokémon Consonancia",
     "tituloDetalle": "Pokémon Consonancia — Port por Dani",
     "tipo": "port",
@@ -223,7 +225,7 @@ const PROYECTOS = [
       "R36 Max"
     ],
     "motor": "RPG Maker XP",
-    "estado": "En pruebas",
+    "estado": "Jugable",
     "fecha": "2026-11-07",
     "color": "violet",
     "ejemplo": false,
@@ -253,6 +255,7 @@ const PROYECTOS = [
   },
   {
     "id": "pokemon-frontera-digital",
+    fps: {"rango":"25–40","contexto":"Rendimiento reportado por Dani."},
     "titulo": "Pokémon La Frontera Digital",
     "tituloDetalle": "Pokémon La Frontera Digital — Port por Dani",
     "tipo": "port",
@@ -263,7 +266,7 @@ const PROYECTOS = [
       "R36 Max"
     ],
     "motor": "RPG Maker XP",
-    "estado": "En pruebas",
+    "estado": "Jugable",
     "fecha": "2026-11-07",
     "color": "cyan",
     "ejemplo": false,
@@ -293,6 +296,7 @@ const PROYECTOS = [
   },
   {
     "id": "pokemon-gadir",
+    fps: {"rango":"25–40","contexto":"Rendimiento reportado por Dani."},
     "titulo": "Pokémon Gadir",
     "tituloDetalle": "Pokémon Gadir — Port por Dani",
     "tipo": "port",
@@ -303,7 +307,7 @@ const PROYECTOS = [
       "R36 Max"
     ],
     "motor": "RPG Maker XP",
-    "estado": "En pruebas",
+    "estado": "Jugable",
     "fecha": "2026-11-07",
     "color": "pink",
     "ejemplo": false,
@@ -333,6 +337,7 @@ const PROYECTOS = [
   },
   {
     "id": "pokemon-opalo",
+    fps: {"rango":"25–40","contexto":"Rendimiento reportado por Dani."},
     "titulo": "Pokémon Ópalo",
     "tituloDetalle": "Pokémon Ópalo — Port por Dani",
     "tipo": "port",
@@ -343,7 +348,7 @@ const PROYECTOS = [
       "R36 Max"
     ],
     "motor": "RPG Maker XP",
-    "estado": "En pruebas",
+    "estado": "Jugable",
     "fecha": "2026-11-07",
     "color": "violet",
     "ejemplo": false,
@@ -373,6 +378,7 @@ const PROYECTOS = [
   },
   {
     "id": "pokemon-tectonic",
+    fps: {"rango":"25–40","contexto":"Rendimiento reportado por Dani."},
     "titulo": "Pokémon Tectonic",
     "tituloDetalle": "Pokémon Tectonic — Port por Dani",
     "tipo": "port",
@@ -383,7 +389,7 @@ const PROYECTOS = [
       "R36 Max"
     ],
     "motor": "RPG Maker XP",
-    "estado": "En pruebas",
+    "estado": "Jugable",
     "fecha": "2026-11-07",
     "color": "gold",
     "ejemplo": false,
@@ -413,6 +419,7 @@ const PROYECTOS = [
   },
   {
     "id": "pokemon-titan",
+    fps: {"rango":"22–25","contexto":"Rendimiento reportado por Dani."},
     "titulo": "Pokémon Titán",
     "tituloDetalle": "Pokémon Titán — Port por Dani",
     "tipo": "port",
@@ -423,7 +430,7 @@ const PROYECTOS = [
       "R36 Max"
     ],
     "motor": "RPG Maker XP",
-    "estado": "En pruebas",
+    "estado": "Jugable",
     "fecha": "2026-11-07",
     "color": "gold",
     "ejemplo": false,
@@ -453,6 +460,7 @@ const PROYECTOS = [
   },
   {
     "id": "pokemon-z",
+    fps: {"rango":"25–40","contexto":"Rendimiento reportado por Dani."},
     "titulo": "Pokémon Z",
     "tituloDetalle": "Pokémon Z — Port por Dani",
     "tipo": "port",
@@ -463,7 +471,7 @@ const PROYECTOS = [
       "R36 Max"
     ],
     "motor": "RPG Maker XP",
-    "estado": "En pruebas",
+    "estado": "Jugable",
     "fecha": "2026-11-07",
     "color": "gold",
     "ejemplo": false,
@@ -493,6 +501,7 @@ const PROYECTOS = [
   },
   {
     "id": "wonder-boy",
+    fps: {"rango":"30","estable":true,"contexto":"Rendimiento reportado por Dani."},
     "titulo": "Wonder Boy: The Dragon’s Trap",
     "tituloDetalle": "Wonder Boy: The Dragon’s Trap — Port por Dani",
     "tipo": "port",
@@ -503,11 +512,11 @@ const PROYECTOS = [
       "R36 Max"
     ],
     "motor": "Otros",
-    "estado": "Disponible",
+    "estado": "Jugable",
     "fecha": "2026-11-07",
     "color": "pink",
     "ejemplo": false,
-    "descripcion": "Port de la edición Android con preparación automática. Esta entrega no documenta una medición de FPS ni pruebas de partida en consola.",
+    "descripcion": "Port de la edición Android con preparación automática. Dani reportó 30 FPS estables.",
     "detalles": [
       {
         "titulo": "Instalación",
@@ -534,7 +543,7 @@ const PROYECTOS = [
     id: 'parahcuy', titulo: 'ParahCuy', tituloDetalle: 'ParahCuy — Port por Dani',
     tipo: 'port', imagen: 'assets/proximamente-parahcuy.webp', creditoImagen: 'Carátula · IGDB',
     consolas: ['R36S', 'R36 Max'], motor: 'GameMaker', estado: 'Jugable', fecha: '2026-11-07', color: 'gold', ejemplo: false,
-    fps: { rango: '56–60', historico: true, contexto: 'Medición del port base en R36 Max con dArkOS4Clone, en el menú y la primera zona jugable, sin contar cargas.' },
+    fps: { rango: '56–60', contexto: 'Medición del port base en R36 Max con dArkOS4Clone, en el menú y la primera zona jugable, sin contar cargas.' },
     descripcion: 'Port con selector 4:3 o 16:9 original. En esta revisión se probaron el formato 4:3 y la salida inmediata en R36 Max. El formato 16:9 y el resto del juego quedan pendientes de verificar.',
     detalles: [
       {
@@ -615,6 +624,7 @@ const PROYECTOS = [
   },
   {
     id: 'runic-curse', titulo: 'Runic Curse', tituloDetalle: 'Runic Curse — Port por Dani',
+    fps: {"rango":"30","estable":true,"contexto":"Rendimiento reportado por Dani."},
     tipo: 'port', imagen: 'assets/runic-curse-oficial.webp', creditoImagen: 'Arte oficial de Runic Curse · Nintendo eShop',
     consolas: ['R36S', 'R36 Max'], motor: 'Unity', estado: 'Jugable', fecha: '2026-11-07', color: 'violet', ejemplo: false,
     descripcion: 'Port de Runic Curse para R36S y R36 Max.',
@@ -646,6 +656,7 @@ const PROYECTOS = [
   },
   {
     id: 'pokemon-iberia', titulo: 'Pokémon Iberia', tituloDetalle: 'Pokémon Iberia — Port por Dani',
+    fps: {"rango":"25–40","contexto":"Rendimiento reportado por Dani."},
     tipo: 'port', imagen: 'assets/iberia-pantalla-titulo.webp', creditoImagen: 'Pantalla de título de Pokémon Iberia · EricLostie',
     consolas: ['R36S', 'R36 Max'], motor: 'RPG Maker XP', estado: 'Jugable', fecha: '2026-11-07', color: 'gold', ejemplo: false,
     descripcion: 'Port para la familia R36. Usa los archivos de Pokémon Iberia original V2.03 para Windows y los prepara en la consola.',
@@ -718,7 +729,7 @@ const PROYECTOS = [
   },
   {
     "id": "cuphead",
-    fps: {"rango":"30–36,5","contexto":"Medición anterior en el mapa del mundo. Falta volver a medir con el port actualizado.","historico":true},
+    fps: {"rango":"30–36,5","contexto":"Medición anterior en el mapa del mundo. Falta volver a medir con el port actualizado."},
     "titulo": "Cuphead Android",
     "tituloDetalle": "Cuphead Android — Port por Dani",
     "tipo": "port",
@@ -735,7 +746,7 @@ const PROYECTOS = [
       {
         "titulo": "Imagen y rendimiento",
         "puntos": [
-          "Medición histórica de aproximadamente 30–36,5 FPS en el mapa del mundo. Falta repetir combates y transiciones con el adaptador actualizado.",
+          "Una medición previa registró aproximadamente 30–36,5 FPS en el mapa del mundo. Falta repetir combates y transiciones con el adaptador actualizado.",
           "Selector 4:3 o 16:9. El modo 4:3 puede conservar limitaciones del HUD y 16:9 mantiene el encuadre original.",
           "Atlas comprimidos, corrección de shaders para los sprites y menos comprobaciones repetidas de fuentes.",
           "El lanzador corregido reconoce y reutiliza los datos preparados compatibles."
@@ -888,7 +899,7 @@ const PROYECTOS = [
     ["9-years-of-shadows", "9 Years of Shadows", "violet", "Carátula · Steam"],
     ["pvz-fusion", "PvZ Fusion", "gold", "Captura de PvZ Fusion · Pikiran Rakyat"],
     ["dark-raider", "Dark Raider", "pink", "Carátula · Steam"],
-    ["evoland-2", "Evoland 2", "gold", "Carátula · Steam"],
+    ["evoland-2", "Evoland 2", "gold", "Carátula · Steam", "40–60"],
     ["grimvalor", "Grimvalor", "pink", "Arte de Grimvalor · Nintendo eShop"],
     ["gta-iii-android", "GTA III Android", "violet", "Icono de la edición Android · Rockstar Games"],
     ["gta-vice-city-android", "GTA Vice City Android", "pink", "Icono de la edición Android · Rockstar Games"],
@@ -899,16 +910,17 @@ const PROYECTOS = [
     ["dwarf-journey", "Dwarf Journey", "gold", "Carátula · Steam"],
     ["unruly-heroes", "Unruly Heroes", "pink", "Carátula · Steam"],
     ["river-city-girls", "River City Girls", "violet", "Carátula · Steam"],
-    ["evoland-1", "Evoland 1", "gold", "Carátula · Steam"],
+    ["evoland-1", "Evoland 1", "gold", "Carátula · Steam", "40–60"],
     ["fahrenheit", "Fahrenheit: Indigo Prophecy Remastered", "cyan", "Carátula · Steam"],
     ["advent-neon", "Advent NEON", "cyan", "Carátula · Steam"],
     ["inmost", "INMOST", "violet", "Carátula · Steam"],
     ["the-swords-of-ditto", "The Swords of Ditto: Mormo’s Curse", "gold", "Carátula · Steam"],
     ["greak-memories-of-azur", "Greak: Memories of Azur", "pink", "Carátula · Steam"]
-  ].map(([id, titulo, color, creditoImagen = 'Carátula · Whack a Hack']) => ({
+  ].map(([id, titulo, color, creditoImagen = 'Carátula · Whack a Hack', rangoFps]) => ({
     id, titulo, color, tipo: 'port', estado: 'Próximamente',
     imagen: creditoImagen ? `assets/proximamente-${id}.webp` : '', creditoImagen,
     consolas: ['R36S', 'R36 Max'], fecha: '',
+    ...(rangoFps ? { fps: { rango: rangoFps, contexto: 'Rendimiento reportado por Dani.' } } : {}),
     descripcion: 'Port anunciado para R36S y R36 Max. La fecha de publicación está por anunciar.'
   }))
 ];

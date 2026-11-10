@@ -67,13 +67,13 @@ function tags(project) {
   const state = states[project.estado] || {style: 'dev', icon: 'info'};
   const fps = project.fps;
   const fpsLabel = fps
-    ? (fps.estable ? fps.rango + ' FPS estables' : '≈' + fps.rango + ' FPS') + (fps.historico ? ' · histórico' : '')
+    ? (fps.estable ? fps.rango + ' FPS estables' : '≈' + fps.rango + ' FPS')
     : 'FPS sin medición';
   const fpsContext = fps?.contexto || 'Todavía no hay una medición publicada para este port.';
   return {
     console: project.consolas.length ? '<span class="tag">' + icon('console') + escape(project.consolas.join(' / ')) + '</span>' : '',
     engine: project.motor ? '<span class="tag engine">' + icon('engine') + escape(project.motor) + '</span>' : '',
-    fps: project.estado === 'Próximamente' ? '' : '<span class="tag fps' + (fps ? '' : ' unmeasured') + '" title="' + escape(fpsContext) + '">' +
+    fps: project.estado === 'Próximamente' && !fps ? '' : '<span class="tag fps' + (fps ? '' : ' unmeasured') + '" title="' + escape(fpsContext) + '">' +
       icon('gauge') + escape(fpsLabel) + '</span>',
     status: project.estado ? '<span class="status ' + state.style + '">' + icon(state.icon) + escape(project.estado) + '</span>' : '',
     version: project.version ? '<span class="version">' + icon('tag') + 'v' + escape(project.version) + '</span>' : ''
