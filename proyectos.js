@@ -890,6 +890,8 @@ const PROYECTOS = [
     "repositorio": ""
   },
   ...[
+    ["new-super-mario-bros-wii","New Super Mario Bros. Wii","gold","Carátula de Wii · Super Mario Wiki"],
+    ["resident-evil-code-veronica-x-ps2","Resident Evil Code: Veronica X (PS2)","pink","Carátula de PS2 · Retro Games Best"],
     ['dandara', 'Dandara', 'pink', 'Carátula · Steam'],
     ['poketale', 'Poketale', 'violet'],
     ["fifa-14-android", "FIFA 14 Android", "cyan", "Captura de FIFA 14 Android · Uptodown"],
