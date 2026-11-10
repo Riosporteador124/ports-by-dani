@@ -197,7 +197,7 @@ const PROYECTOS = [
       "rango": "24–30",
       "contexto": "Rendimiento reportado por Dani."
     },
-    "descripcion": "Port con imagen 4:3 centrada. Salta el vídeo de introducción para entrar al juego. Las notas del paquete documentan el arranque hasta la primera zona del metro.",
+    "descripcion": "Port con imagen 4:3 centrada. Salta el vídeo de introducción para entrar al juego.",
     "detalles": [
       {
         "titulo": "Instalación",
@@ -238,7 +238,7 @@ const PROYECTOS = [
     "fecha": "2026-11-10",
     "color": "cyan",
     "ejemplo": false,
-    "descripcion": "Actualización del port Android 2.0.0 para la revisión con mando y texturas ASTC. Requiere datos ya preparados del port anterior. La preparación desde un APK original y la prueba de este paquete en consola siguen pendientes.",
+    "descripcion": "Actualización del port Android 2.0.0 para la revisión con mando y texturas ASTC. Requiere datos ya preparados del port anterior.",
     "detalles": [
       {
         "titulo": "Instalación",
@@ -280,9 +280,9 @@ const PROYECTOS = [
     "ejemplo": false,
     "fps": {
       "rango": "59–59,6",
-      "contexto": "Medición del port base en mountain_bell. La revisión nueva está pendiente de confirmación en consola."
+      "contexto": "Medición del port base en mountain_bell."
     },
-    "descripcion": "Port del fangame con imagen 4:3 centrada, modo rendimiento y mandos físicos. Esta revisión se verificó en PC y queda pendiente probarla en consola.",
+    "descripcion": "Port del fangame con imagen 4:3 centrada, modo rendimiento y mandos físicos.",
     "detalles": [
       {
         "titulo": "Instalación",
@@ -325,9 +325,9 @@ const PROYECTOS = [
     "ejemplo": false,
     "fps": {
       "rango": "25–32",
-      "contexto": "Pruebas previas de R36 Max en exteriores y bosque. En interiores pequeños se registraron 43–46 FPS y en el título, aproximadamente 58 FPS."
+      "contexto": "Rendimiento en exteriores y bosque en R36 Max. En interiores pequeños se registraron 43–46 FPS y en el título, aproximadamente 58 FPS."
     },
-    "descripcion": "La imagen se adapta al panel 1:1 o 4:3 conservando proporciones, interfaz y textos. En pruebas previas de R36 Max se registraron ≈58 FPS en el título, 43–46 en interiores pequeños y 25–32 en exteriores. Se observaron tirones ocasionales en zonas pesadas y queda pendiente validar este paquete en consola.",
+    "descripcion": "La imagen se adapta al panel 1:1 o 4:3 conservando proporciones, interfaz y textos. En R36 Max se registraron ≈58 FPS en el título, 43–46 en interiores pequeños y 25–32 en exteriores. Puede haber tirones ocasionales en zonas pesadas.",
     "detalles": [
       {
         "titulo": "Instalación",
@@ -368,7 +368,7 @@ const PROYECTOS = [
     "fecha": "2026-11-07",
     "color": "cyan",
     "ejemplo": false,
-    "descripcion": "Port de la edición de Windows con preparación automática. Las pruebas del extractor y el audio en consola siguen pendientes. Consulta REVISION Y PRUEBAS.txt.",
+    "descripcion": "Port de la edición de Windows con preparación automática.",
     "detalles": [
       {
         "titulo": "Instalación",
@@ -409,7 +409,7 @@ const PROYECTOS = [
     "fecha": "2026-11-07",
     "color": "pink",
     "ejemplo": false,
-    "descripcion": "Port de la edición de Windows con preparación automática. Las pruebas del extractor y el audio en consola siguen pendientes. Consulta REVISION Y PRUEBAS.txt.",
+    "descripcion": "Port de la edición de Windows con preparación automática.",
     "detalles": [
       {
         "titulo": "Instalación",
@@ -450,7 +450,7 @@ const PROYECTOS = [
     "fecha": "2026-11-07",
     "color": "violet",
     "ejemplo": false,
-    "descripcion": "Port de la edición de Windows con preparación automática. Las pruebas del extractor y el audio en consola siguen pendientes. Consulta REVISION Y PRUEBAS.txt.",
+    "descripcion": "Port de la edición de Windows con preparación automática.",
     "detalles": [
       {
         "titulo": "Instalación",
@@ -491,7 +491,7 @@ const PROYECTOS = [
     "fecha": "2026-11-07",
     "color": "cyan",
     "ejemplo": false,
-    "descripcion": "Port de la edición de Windows con preparación automática. Las pruebas del extractor y el audio en consola siguen pendientes. Consulta REVISION Y PRUEBAS.txt.",
+    "descripcion": "Port de la edición de Windows con preparación automática.",
     "detalles": [
       {
         "titulo": "Instalación",
@@ -532,7 +532,7 @@ const PROYECTOS = [
     "fecha": "2026-11-07",
     "color": "pink",
     "ejemplo": false,
-    "descripcion": "Port de la edición de Windows con preparación automática. Las pruebas del extractor y el audio en consola siguen pendientes. Consulta REVISION Y PRUEBAS.txt.",
+    "descripcion": "Port de la edición de Windows con preparación automática.",
     "detalles": [
       {
         "titulo": "Instalación",
@@ -573,7 +573,7 @@ const PROYECTOS = [
     "fecha": "2026-11-07",
     "color": "violet",
     "ejemplo": false,
-    "descripcion": "Port de la edición de Windows con preparación automática. Las pruebas del extractor y el audio en consola siguen pendientes. Consulta REVISION Y PRUEBAS.txt.",
+    "descripcion": "Port de la edición de Windows con preparación automática.",
     "detalles": [
       {
         "titulo": "Instalación",
@@ -614,7 +614,7 @@ const PROYECTOS = [
     "fecha": "2026-11-07",
     "color": "gold",
     "ejemplo": false,
-    "descripcion": "Port de la edición de Windows con preparación automática. Las pruebas del extractor y el audio en consola siguen pendientes. Consulta REVISION Y PRUEBAS.txt. La mejora de rendimiento de textos y menús todavía requiere una medición en partida.",
+    "descripcion": "Port de la edición de Windows con preparación automática.",
     "detalles": [
       {
         "titulo": "Instalación",
@@ -655,7 +655,7 @@ const PROYECTOS = [
     "fecha": "2026-11-07",
     "color": "gold",
     "ejemplo": false,
-    "descripcion": "Port de la edición de Windows con preparación automática. Las pruebas del extractor y el audio en consola siguen pendientes. Consulta REVISION Y PRUEBAS.txt.",
+    "descripcion": "Port de la edición de Windows con preparación automática.",
     "detalles": [
       {
         "titulo": "Instalación",
@@ -696,7 +696,7 @@ const PROYECTOS = [
     "fecha": "2026-11-07",
     "color": "gold",
     "ejemplo": false,
-    "descripcion": "Port de la edición de Windows con preparación automática. Las pruebas del extractor y el audio en consola siguen pendientes. Consulta REVISION Y PRUEBAS.txt.",
+    "descripcion": "Port de la edición de Windows con preparación automática.",
     "detalles": [
       {
         "titulo": "Instalación",
@@ -765,7 +765,7 @@ const PROYECTOS = [
     tipo: 'port', imagen: 'assets/proximamente-parahcuy.webp', creditoImagen: 'Carátula · IGDB',
     consolas: ['R36S', 'R36 Max'], motor: 'GameMaker', estado: 'Jugable', fecha: '2026-11-07', color: 'gold', ejemplo: false,
     fps: { rango: '56–60', contexto: 'Medición del port base en R36 Max con dArkOS4Clone, en el menú y la primera zona jugable, sin contar cargas.' },
-    descripcion: 'Port con selector 4:3 o 16:9 original. En esta revisión se probaron el formato 4:3 y la salida inmediata en R36 Max. El formato 16:9 y el resto del juego quedan pendientes de verificar.',
+    descripcion: 'Port con selector 4:3 o 16:9 original. Incluye salida inmediata con SELECT + START.',
     detalles: [
       {
         titulo: 'Instalación',
@@ -793,8 +793,8 @@ const PROYECTOS = [
     id: 'teslagrad', titulo: 'Teslagrad', tituloDetalle: 'Teslagrad — Port por Dani',
     tipo: 'port', imagen: 'assets/proximamente-teslagrad.webp', creditoImagen: 'Carátula · Steam',
     consolas: ['R36S', 'R36 Max'], motor: 'Unity', estado: 'Jugable', fecha: '2026-11-07', color: 'cyan', ejemplo: false,
-    fps: { rango: '26–30', contexto: 'Estimación indicada por Dani. Esta revisión está pendiente de probarse en consola.' },
-    descripcion: 'Port con presentación 4:3 y un rendimiento estimado de 26–30 FPS. La instalación se comprobó en PC. Queda pendiente probar esta revisión en consola.',
+    fps: { rango: '26–30', contexto: 'Estimación indicada por Dani.' },
+    descripcion: 'Port con presentación 4:3 y un rendimiento estimado de 26–30 FPS.',
     detalles: [
       {
         titulo: 'Instalación',
@@ -821,7 +821,7 @@ const PROYECTOS = [
     fps: { rango: '30', estable: true, contexto: 'Rendimiento reportado por Dani.' },
     tipo: 'port', imagen: 'assets/proximamente-ugly.webp', creditoImagen: 'Carátula · Steam',
     consolas: ['R36S', 'R36 Max'], motor: 'Unity', estado: 'Jugable', fecha: '2026-11-07', color: 'pink', ejemplo: false,
-    descripcion: 'Port con presentación 4:3. La instalación se comprobó en PC.',
+    descripcion: 'Port con presentación 4:3.',
     detalles: [
       {
         titulo: 'Instalación',
@@ -922,7 +922,7 @@ const PROYECTOS = [
         puntos: [
           'Imagen 4:3 centrada, sin deformación. Conserva las texturas y la resolución de los textos.',
           'Contador de FPS opcional, oculto al iniciar.',
-          'Probado en R36 Max XiFan con dArkOS4Clone. En la zona medida alcanzó aproximadamente 55–57 FPS. El rendimiento puede variar según el nivel y las cargas.'
+          'Aproximadamente 55–57 FPS en la zona medida en R36 Max XiFan con dArkOS4Clone. El rendimiento puede variar según el nivel y las cargas.'
         ]
       },
       {
@@ -950,7 +950,7 @@ const PROYECTOS = [
   },
   {
     "id": "cuphead",
-    fps: {"rango":"30–36,5","contexto":"Medición anterior en el mapa del mundo. Falta volver a medir con el port actualizado."},
+    fps: {"rango":"30–36,5","contexto":"Medición anterior en el mapa del mundo."},
     "titulo": "Cuphead Android",
     "tituloDetalle": "Cuphead Android — Port por Dani",
     "tipo": "port",
@@ -962,12 +962,12 @@ const PROYECTOS = [
     "fecha": "2026-11-07",
     "color": "gold",
     "ejemplo": false,
-    "descripcion": "Port de Cuphead Android por Dani. Requiere el APK 1.0.2 ARM64. El lanzador actualizado y sus archivos se verificaron en la microSD de la R36 Max. Queda pendiente una prueba completa en partida.",
+    "descripcion": "Port de Cuphead Android por Dani. Requiere el APK 1.0.2 ARM64.",
     "detalles": [
       {
         "titulo": "Imagen y rendimiento",
         "puntos": [
-          "Una medición previa registró aproximadamente 30–36,5 FPS en el mapa del mundo. Falta repetir combates y transiciones con el adaptador actualizado.",
+          "Una medición previa registró aproximadamente 30–36,5 FPS en el mapa del mundo.",
           "Selector 4:3 o 16:9. El modo 4:3 puede conservar limitaciones del HUD y 16:9 mantiene el encuadre original.",
           "Atlas comprimidos, corrección de shaders para los sprites y menos comprobaciones repetidas de fuentes.",
           "El lanzador corregido reconoce y reutiliza los datos preparados compatibles."
@@ -1023,8 +1023,7 @@ const PROYECTOS = [
         "puntos": [
           "Medición en R36 Max de aproximadamente 26–30 FPS en los tramos registrados, con algunos tirones y una pausa cercana a 0,2 segundos.",
           "Renderizado interno al 100 % para recuperar la legibilidad del menú.",
-          "Preparación de texturas, precarga gradual de recursos de próximas salas y reserva temporal de memoria.",
-          "Controles y sonido comprobados durante la partida. Instalación verificada con 7.516 archivos preparados."
+          "Preparación de texturas, precarga gradual de recursos de próximas salas y reserva temporal de memoria."
         ]
       },
       {
@@ -1040,7 +1039,7 @@ const PROYECTOS = [
         "puntos": [
           "Extrae Elderand.sh y la carpeta elderand directamente en ports de la microSD. Déjalos juntos, sin una carpeta adicional alrededor.",
           "Coloca tu APK compatible en elderand/gamedata/. Se requiere Android 1.3.22 (50), ARM64.",
-          "Abre el juego desde Ports. La primera apertura prepara los datos automáticamente y muestra el progreso. Puede tardar bastante, especialmente en Cuphead.",
+          "Abre el juego desde Ports. La primera apertura prepara los datos automáticamente y muestra el progreso. Puede tardar bastante.",
           "Mantén la consola con alimentación y encendida durante la preparación. SELECT + START cancela. Al volver a abrir se reutiliza lo que ya terminó.",
           "Las siguientes aperturas utilizan los datos preparados. La instalación en la consola funciona sin Windows ni internet."
         ]
@@ -1070,15 +1069,15 @@ const PROYECTOS = [
     "fecha": "2026-11-07",
     "color": "pink",
     "ejemplo": false,
-    "descripcion": "Port de Blasphemous por Dani. Instalación y arranque confirmados en R36 Max. La estabilidad durante partidas prolongadas sigue en evaluación.",
+    "descripcion": "Port de Blasphemous por Dani con presentación 4:3 y texturas preparadas para la consola.",
     "detalles": [
       {
         "titulo": "Imagen y rendimiento",
         "puntos": [
-          "Medición en R36 Max de aproximadamente 29–30 FPS en la escena registrada. La muestra no permite extrapolar el resultado a otros combates o zonas.",
+          "Medición en R36 Max de aproximadamente 29–30 FPS en la escena registrada.",
           "Presentación 4:3 con ataques, sangre e interfaz visibles.",
           "Texturas preparadas para la consola y reserva temporal de memoria comprimida para aliviar la falta de RAM. El efecto sobre los FPS depende de la carga.",
-          "Instalación completada desde Ports. El lanzador corregido reutiliza los datos preparados."
+          "El lanzador reutiliza los datos preparados."
         ]
       },
       {
@@ -1094,7 +1093,7 @@ const PROYECTOS = [
         "puntos": [
           "Extrae Blasphemous.sh y la carpeta blasphemous-research directamente en ports de la microSD. Déjalos juntos, sin una carpeta adicional alrededor.",
           "Coloca tu APK compatible en blasphemous-research/gamedata/. Se requiere Android 1.9.0 (38), ARM64.",
-          "Abre el juego desde Ports. La primera apertura prepara los datos automáticamente y muestra el progreso. Puede tardar bastante, especialmente en Cuphead.",
+          "Abre el juego desde Ports. La primera apertura prepara los datos automáticamente y muestra el progreso. Puede tardar bastante.",
           "Mantén la consola con alimentación y encendida durante la preparación. SELECT + START cancela. Al volver a abrir se reutiliza lo que ya terminó.",
           "Las siguientes aperturas utilizan los datos preparados. La instalación en la consola funciona sin Windows ni internet."
         ]

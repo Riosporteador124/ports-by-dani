@@ -49,7 +49,7 @@ const pages = {
   },
   info: {
     title: 'Acerca de Ports by Dani',
-    html: '<p>Ports y adaptadores para R36S y R36 Max compatibles con ArkOSClone y dArkOSClone.</p><p>Consulta cada ficha para conocer sus requisitos y las pruebas completadas.</p><a class="button" href="#inicio">Volver al inicio ' + icon('arrow') + '</a>'
+    html: '<p>Ports y adaptadores para R36S y R36 Max compatibles con ArkOSClone y dArkOSClone.</p><p>Consulta cada ficha para conocer los requisitos, los controles y el rendimiento del port.</p><a class="button" href="#inicio">Volver al inicio ' + icon('arrow') + '</a>'
   }
 };
 
