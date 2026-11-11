@@ -1,6 +1,135 @@
 // Cada proyecto es una ficha. Copia una entrada y cambia sus datos.
 const PROYECTOS = [
   {
+    "id": "oddmar",
+    "titulo": "Oddmar",
+    "color": "gold",
+    "tipo": "port",
+    "estado": "Jugable",
+    "imagen": "assets/proximamente-oddmar.webp",
+    "creditoImagen": "Arte de Oddmar · Nintendo eShop",
+    "consolas": [
+      "R36S",
+      "R36 Max"
+    ],
+    "fecha": "2026-11-10",
+    "descripcion": "Port con imagen panorámica centrada, controles físicos y audio Wwise. Las cinemáticas se saltan automáticamente para continuar a la siguiente escena.",
+    "tituloDetalle": "Oddmar — Port por Dani",
+    "motor": "Unity",
+    "ejemplo": false,
+    "detalles": [
+      {
+        "titulo": "Instalación",
+        "numerado": true,
+        "puntos": [
+          "Extrae Oddmar.sh y la carpeta oddmar juntos en ports de la microSD.",
+          "Coloca tu APK completo Android 0.111 (265) ARM64, paquete com.mobge.Oddmar, en oddmar/gamedata/. También sirve un XAPK completo de esa edición. Consulta VERSION REQUERIDA.txt.",
+          "Abre Oddmar desde Ports. La primera apertura extrae el APK y prepara el sonido y los metadatos. Las siguientes reutilizan los datos instalados."
+        ]
+      },
+      {
+        "titulo": "Controles y partidas",
+        "puntos": [
+          "R3 muestra u oculta los FPS. El contador empieza oculto.",
+          "SELECT + START cancela la preparación o sale del juego. Vuelve a abrir el port para continuar la preparación.",
+          "Guarda antes de salir y conserva home, userdata y saves al actualizar."
+        ]
+      }
+    ],
+    "nota": "El ZIP incluye el port. Aporta los archivos originales de la edición compatible.",
+    "descarga": "https://github.com/Riosporteador124/ports-by-dani/releases/download/ports-2026-11-10-actualizacion/ODDMAR_ADAPTADOR_DANI.zip",
+    "repositorio": ""
+  },
+  {
+    "id": "fifa-14-android",
+    "titulo": "FIFA 14 Android · FC26 opcional",
+    "color": "cyan",
+    "tipo": "port",
+    "estado": "Jugable",
+    "imagen": "assets/proximamente-fifa-14-android.webp",
+    "creditoImagen": "Captura de FIFA 14 Android · Uptodown",
+    "consolas": [
+      "R36S",
+      "R36 Max"
+    ],
+    "fecha": "2026-11-10",
+    "descripcion": "Port de FIFA 14 Android con imagen 4:3, controles físicos y soporte de mods de datos como FC26. El motor ARM32 requiere ejecución y gráficos armhf en el firmware.",
+    "tituloDetalle": "FIFA 14 Android · FC26 opcional — Port por Dani",
+    "motor": "Otros",
+    "ejemplo": false,
+    "detalles": [
+      {
+        "titulo": "Instalación",
+        "numerado": true,
+        "puntos": [
+          "Extrae FIFA 14.sh y la carpeta fifa14 juntos en ports de la microSD.",
+          "Coloca el APK completo Android FIFA 14 1.3.6 (136), paquete com.ea.game.fifa14_row, en fifa14/gamedata/. Esta edición incluye el OBB base y el motor ARMv7 dentro del APK. Consulta VERSION REQUERIDA.txt para comprobar el archivo compatible.",
+          "Abre FIFA 14 desde Ports. La primera apertura extrae el motor y los datos incluidos en el APK. Las siguientes reutilizan la instalación."
+        ]
+      },
+      {
+        "titulo": "Controles y partidas",
+        "puntos": [
+          "R3 muestra u oculta los FPS. El contador empieza oculto.",
+          "L3 alterna cursor y mando. SELECT + R1 muestra u oculta el cursor SDL opcional.",
+          "SELECT + START cancela la preparación o sale del juego. Vuelve a abrir el port para continuar la preparación.",
+          "Guarda antes de salir y conserva userdata al actualizar."
+        ]
+      },
+      {
+        "titulo": "Mod opcional FC26 u otro mod compatible",
+        "puntos": [
+          "Coloca un OBB main.136.com.ea.game.fifa14_row.obb compatible con el motor 1.3.6 en fifa14/gamedata/mod/. También sirve un APK o ZIP del mod que contenga ese OBB.",
+          "Al abrir desde Ports se instalan los datos del mod. La compatibilidad depende de la edición concreta del mod.",
+          "Para volver a la base, retira el paquete de gamedata/mod/ y conserva el APK base en gamedata/. La siguiente preparación restaura los datos base."
+        ]
+      }
+    ],
+    "nota": "El ZIP incluye el port. Aporta los archivos originales de la edición compatible.",
+    "descarga": "https://github.com/Riosporteador124/ports-by-dani/releases/download/ports-2026-11-10-actualizacion/FIFA14_FC26_ADAPTADOR_DANI.zip",
+    "repositorio": ""
+  },
+  {
+    "id": "inmost",
+    "titulo": "INMOST",
+    "color": "violet",
+    "tipo": "port",
+    "estado": "Jugable",
+    "imagen": "assets/proximamente-inmost.webp",
+    "creditoImagen": "Carátula · Steam",
+    "consolas": [
+      "R36S",
+      "R36 Max"
+    ],
+    "fecha": "2026-11-10",
+    "descripcion": "Port de la edición Android ARM64 con instalación desde el APK original y preparación automática de los recursos.",
+    "tituloDetalle": "INMOST — Port por Dani",
+    "motor": "Unity",
+    "ejemplo": false,
+    "detalles": [
+      {
+        "titulo": "Instalación",
+        "numerado": true,
+        "puntos": [
+          "Extrae INMOST.sh y la carpeta inmost-arkos juntos en ports de la microSD.",
+          "Coloca tu APK completo Android 2.78 (90) ARM64 en inmost-arkos/gamedata/. También sirve un XAPK completo de esa edición. Consulta VERSION REQUERIDA.txt.",
+          "Abre INMOST desde Ports. La primera apertura extrae el juego y prepara sus bibliotecas, sonido y texturas. Las siguientes reutilizan los datos instalados."
+        ]
+      },
+      {
+        "titulo": "Controles y partidas",
+        "puntos": [
+          "SELECT + R3 muestra u oculta los FPS. El contador empieza oculto.",
+          "SELECT + START cancela la preparación o sale del juego. Vuelve a abrir el port para continuar la preparación.",
+          "Conserva home, userdata y saves al actualizar."
+        ]
+      }
+    ],
+    "nota": "El ZIP incluye el port. Aporta los archivos originales de la edición compatible.",
+    "descarga": "https://github.com/Riosporteador124/ports-by-dani/releases/download/ports-2026-11-10-actualizacion/INMOST_ADAPTADOR_DANI.zip",
+    "repositorio": ""
+  },
+  {
     "id": "dandara",
     "titulo": "Dandara",
     "tituloDetalle": "Dandara — Port por Dani",
@@ -20,28 +149,28 @@ const PROYECTOS = [
       "rango": "28–30",
       "contexto": "Rendimiento reportado por Dani."
     },
-    "descripcion": "Port de Android 1.5.24 ARM64. Esta edición reutiliza los datos preparados del port anterior de Dani.",
+    "descripcion": "Port de Android 1.5.24 ARM64 con instalación desde el APK original y generación automática de texturas ASTC.",
     "detalles": [
       {
         "titulo": "Instalación",
         "numerado": true,
         "puntos": [
           "Extrae Dandara.sh y la carpeta dandara juntos en ports de la microSD.",
-          "Coloca DANDARA-DANI.zip en dandara/gamedata/. También puedes copiar allí las carpetas assets y lib preparadas, incluido runtime-assets.apk. Consulta VERSION REQUERIDA.txt.",
-          "Abre Dandara desde Ports. La primera apertura verifica y prepara los datos. Las siguientes reutilizan lo instalado."
+          "Coloca tu APK completo Android 1.5.24 (200) ARM64 en dandara/gamedata/. También sirve un XAPK completo de esa edición. Consulta VERSION REQUERIDA.txt.",
+          "Abre Dandara desde Ports. La primera apertura extrae el juego y prepara sus 287 texturas ASTC. Las siguientes aperturas reutilizan los datos instalados."
         ]
       },
       {
         "titulo": "Controles y partidas",
         "puntos": [
           "SELECT + R3 muestra u oculta los FPS. El contador empieza oculto.",
-          "SELECT + START cancela la preparación. Vuelve a abrir el port para continuar.",
+          "SELECT + START cancela la preparación o sale del juego. Vuelve a abrir el port para continuar la preparación.",
           "Conserva home, userdata y saves al actualizar."
         ]
       }
     ],
-    "nota": "El ZIP incluye el port. Aporta los datos compatibles del juego.",
-    "descarga": "https://github.com/Riosporteador124/ports-by-dani/releases/download/ports-2026-11-10-2/DANDARA__DANI.zip",
+    "nota": "El ZIP incluye el port. Aporta los archivos originales de la edición compatible.",
+    "descarga": "https://github.com/Riosporteador124/ports-by-dani/releases/download/ports-2026-11-10-actualizacion/DANDARA__DANI.zip",
     "repositorio": ""
   },
   {
@@ -108,28 +237,28 @@ const PROYECTOS = [
       "rango": "33–45",
       "contexto": "Rendimiento reportado por Dani."
     },
-    "descripcion": "Port de Android 1.1.1 ARM64 con texturas ASTC y audio PCM a 24 kHz. Requiere los datos preparados de la revisión indicada del port de Dani.",
+    "descripcion": "Port de Android 1.1.1 ARM64 con preparación desde el APK y el OBB originales, texturas ASTC y audio PCM a 24 kHz.",
     "detalles": [
       {
         "titulo": "Instalación",
         "numerado": true,
         "puntos": [
           "Extrae The Swords of Ditto.sh y la carpeta ditto-arkos juntos en ports de la microSD.",
-          "Coloca ditto-arkos-datos-preparados.zip en ditto-arkos/gamedata/. El ZIP de datos debe contener game.apk, lib/ y las 591 páginas PVR en userdata/textures/.",
-          "Abre The Swords of Ditto desde Ports. La primera apertura verifica y prepara los datos. Las siguientes reutilizan lo instalado."
+          "Coloca tu APK Android 1.1.1 (1001002) ARM64 y main.1001002.com.devolver.Swordsofditto.obb en ditto-arkos/gamedata/. También sirve un XAPK completo o el APK junto al ZIP original que contiene el OBB. Consulta VERSION REQUERIDA.txt.",
+          "Abre The Swords of Ditto desde Ports. La primera apertura genera las 591 páginas de texturas y prepara el audio. Puede tardar y requiere espacio para los originales, los archivos temporales y la instalación. Las siguientes aperturas reutilizan lo preparado."
         ]
       },
       {
         "titulo": "Controles y partidas",
         "puntos": [
           "SELECT + R3 muestra u oculta los FPS. El contador empieza oculto.",
-          "SELECT + START cancela la preparación o vuelve a Ports con una pulsación breve durante la partida. Vuelve a abrir el port para continuar la preparación.",
+          "SELECT + START cancela la preparación o sale del juego. Vuelve a abrir el port para continuar la preparación.",
           "Guarda desde el juego antes de salir y conserva userdata, incluida userdata/Savefiles, al actualizar."
         ]
       }
     ],
-    "nota": "El ZIP incluye el port. Aporta los datos compatibles del juego.",
-    "descarga": "https://github.com/Riosporteador124/ports-by-dani/releases/download/ports-2026-11-10-2/THE_SWORDS_OF_DITTO_ADAPTADOR_DANI.zip",
+    "nota": "El ZIP incluye el port. Aporta los archivos originales de la edición compatible.",
+    "descarga": "https://github.com/Riosporteador124/ports-by-dani/releases/download/ports-2026-11-10-actualizacion/THE_SWORDS_OF_DITTO_ADAPTADOR_DANI.zip",
     "repositorio": ""
   },
   {
@@ -223,7 +352,11 @@ const PROYECTOS = [
   },
   {
     "id": "dead-station-2",
-    fps: {"rango":"30","estable":true,"contexto":"Rendimiento reportado por Dani."},
+    "fps": {
+      "rango": "30",
+      "estable": true,
+      "contexto": "Rendimiento reportado por Dani."
+    },
     "titulo": "Dead Station 2",
     "tituloDetalle": "Dead Station 2 — Port por Dani",
     "tipo": "port",
@@ -238,28 +371,28 @@ const PROYECTOS = [
     "fecha": "2026-11-10",
     "color": "cyan",
     "ejemplo": false,
-    "descripcion": "Actualización del port Android 2.0.0 para la revisión con mando y texturas ASTC. Requiere datos ya preparados del port anterior.",
+    "descripcion": "Port de Android 2.0.0 con controles físicos y preparación automática de texturas ASTC desde el APK original.",
     "detalles": [
       {
         "titulo": "Instalación",
         "numerado": true,
         "puntos": [
           "Extrae Dead Station 2.sh y la carpeta deadstation2 juntos en ports de la microSD.",
-          "Pon deadstation2r36maxmando-paquete-2361b440.zip en deadstation2/gamedata/. También puedes copiar assets/game.apk y textures-astc/ ya preparados a esa carpeta, o conservar la carpeta anterior deadstation2r36maxmando/ para que el lanzador la reconozca.",
-          "Abre Dead Station 2 desde Ports. La primera apertura verifica e importa los datos. Las siguientes reutilizan lo instalado."
+          "Coloca tu APK completo Android 2.0.0 (2000000) ARM64 en deadstation2/gamedata/. También sirve un XAPK completo de esa edición. Consulta VERSION REQUERIDA.txt.",
+          "Abre Dead Station 2 desde Ports. La primera apertura prepara el juego y sus 60 texturas ASTC. La conversión puede tardar. Las siguientes aperturas reutilizan lo instalado."
         ]
       },
       {
         "titulo": "Controles y partidas",
         "puntos": [
           "SELECT + R3 muestra u oculta los FPS. El contador empieza oculto.",
-          "SELECT + START cancela la preparación o solicita salir del juego. Si cancelas la preparación, vuelve a abrir el port para continuar.",
-          "Conserva saves al actualizar para mantener tus partidas."
+          "SELECT + START cancela la preparación o sale del juego. Vuelve a abrir el port para continuar la preparación.",
+          "Conserva saves, home y userdata al actualizar."
         ]
       }
     ],
-    "nota": "El ZIP contiene el adaptador. Para instalarlo, aporta los datos compatibles del port anterior.",
-    "descarga": "https://github.com/Riosporteador124/ports-by-dani/releases/download/ports-2026-11-10/DEAD_STATION_2_ADAPTADOR_DANI.zip",
+    "nota": "El ZIP incluye el port. Aporta los archivos originales de la edición compatible.",
+    "descarga": "https://github.com/Riosporteador124/ports-by-dani/releases/download/ports-2026-11-10-actualizacion/DEAD_STATION_2_ADAPTADOR_DANI.zip",
     "repositorio": ""
   },
   {
@@ -722,7 +855,11 @@ const PROYECTOS = [
   },
   {
     "id": "wonder-boy",
-    fps: {"rango":"30","estable":true,"contexto":"Rendimiento reportado por Dani."},
+    "fps": {
+      "rango": "30",
+      "estable": true,
+      "contexto": "Rendimiento reportado por Dani."
+    },
     "titulo": "Wonder Boy: The Dragon’s Trap",
     "tituloDetalle": "Wonder Boy: The Dragon’s Trap — Port por Dani",
     "tipo": "port",
@@ -734,30 +871,42 @@ const PROYECTOS = [
     ],
     "motor": "Otros",
     "estado": "Jugable",
-    "fecha": "2026-11-07",
+    "fecha": "2026-11-10",
     "color": "pink",
     "ejemplo": false,
-    "descripcion": "Port de la edición Android con preparación automática. Dani reportó 30 FPS estables.",
+    "descripcion": "Port de la edición Android con preparación automática y perfil de rendimiento que ajusta el mínimo de GPU según la temperatura.",
     "detalles": [
       {
         "titulo": "Instalación",
         "numerado": true,
         "puntos": [
           "Extrae Wonder Boy.sh y la carpeta wonderboy juntos en ports de la microSD.",
-          "Coloca tu APK Android 1.1.0 (105) ARM64 con OBB main.103 o XAPK completo de esa misma edición en wonderboy/gamedata/. Consulta VERSION REQUERIDA.txt para verificar los archivos.",
-          "Abre Wonder Boy desde Ports. La primera apertura verifica y prepara los datos con una barra de progreso. Las siguientes reutilizan lo preparado."
+          "Coloca tu APK Android 1.1.0 (105) ARM64 y OBB main.103 en wonderboy/gamedata/. También sirve un XAPK completo de esa edición. Consulta VERSION REQUERIDA.txt.",
+          "Abre Wonder Boy desde Ports. La primera apertura prepara los datos con una barra de progreso. Las siguientes aperturas reutilizan lo instalado."
         ]
       },
       {
-        "titulo": "Controles adicionales",
+        "titulo": "Controles y partidas",
         "puntos": [
-          "R3 muestra u oculta el contador de FPS. Empieza oculto.",
-          "SELECT + START cancela la preparación. Vuelve a abrir el port para continuar."
+          "R3 muestra u oculta los FPS. El contador empieza oculto.",
+          "SELECT + START cancela la preparación o sale del juego. Vuelve a abrir el port para continuar la preparación.",
+          "Conserva home, userdata y saves al actualizar."
+        ]
+      },
+      {
+        "titulo": "ArkOS4Clone y pantalla negra antes del instalador",
+        "numerado": true,
+        "puntos": [
+          "Este ajuste se aplica una vez por tarjeta cuando la herramienta reconoce la configuración de ArkOS4Clone. Cierra el juego y conecta por SSH con la cuenta administradora de la tarjeta.",
+          "Entra en la carpeta con cd \"/roms/ports/wonderboy/compat\". Si usas SD2, cambia /roms/ports por /roms2/ports.",
+          "Ejecuta python3 install_arkos_ports_route.py arkos-ports-launch.sh para comprobar si el ajuste corresponde a tu firmware.",
+          "Si la comprobación termina correctamente, ejecuta python3 install_arkos_ports_route.py arkos-ports-launch.sh --apply y después sudo systemctl restart emulationstation.service.",
+          "Abre Wonder Boy desde Ports. La ruta directa evita la animación previa al instalador."
         ]
       }
     ],
-    "nota": "El ZIP contiene el port. Aporta los archivos compatibles del juego y conserva home, userdata y saves al actualizar.",
-    "descarga": "https://github.com/Riosporteador124/ports-by-dani/releases/download/ports-2026-11-07/WONDER_BOY_ADAPTADOR_DANI.zip",
+    "nota": "El ZIP incluye el port. Aporta los archivos originales de la edición compatible.",
+    "descarga": "https://github.com/Riosporteador124/ports-by-dani/releases/download/ports-2026-11-10-actualizacion/WONDER_BOY_ADAPTADOR_DANI-ACTUALIZADO.zip",
     "repositorio": ""
   },
   {
@@ -1115,9 +1264,7 @@ const PROYECTOS = [
     ["new-super-mario-bros-wii","New Super Mario Bros. Wii","gold","Carátula de Wii · Super Mario Wiki"],
     ["resident-evil-code-veronica-x-ps2","Resident Evil Code: Veronica X (PS2)","pink","Carátula de PS2 · Retro Games Best"],
     ['poketale', 'Poketale', 'violet'],
-    ["fifa-14-android", "FIFA 14 Android", "cyan", "Captura de FIFA 14 Android · Uptodown"],
     ["volhem", "Volhem", "violet", null],
-    ["oddmar", "Oddmar", "gold", "Arte de Oddmar · Nintendo eShop"],
     ["sword-of-xolan", "Sword of Xolan", "pink", "Arte oficial · Alper Sarıkaya"],
     ["9-years-of-shadows", "9 Years of Shadows", "violet", "Carátula · Steam"],
     ["pvz-fusion", "PvZ Fusion", "gold", "Captura de PvZ Fusion · Pikiran Rakyat"],
@@ -1134,7 +1281,6 @@ const PROYECTOS = [
     ["evoland-1", "Evoland 1", "gold", "Carátula · Steam", "40–60"],
     ["fahrenheit", "Fahrenheit: Indigo Prophecy Remastered", "cyan", "Carátula · Steam"],
     ["advent-neon", "Advent NEON", "cyan", "Carátula · Steam"],
-    ["inmost", "INMOST", "violet", "Carátula · Steam"],
     ["greak-memories-of-azur", "Greak: Memories of Azur", "pink", "Carátula · Steam"]
   ].map(([id, titulo, color, creditoImagen = 'Carátula · Whack a Hack', rangoFps]) => ({
     id, titulo, color, tipo: 'port', estado: 'Próximamente',
