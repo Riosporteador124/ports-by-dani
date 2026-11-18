@@ -88,12 +88,13 @@ function card(project) {
   const badges = tags(project);
   const image = coverUrl(project);
   const open = ' data-project="' + escape(project.id) + '"';
-  const sample = project.ejemplo ? '<span class="sample">EJEMPLO</span>' : '';
+  const sample = project.ejemplo ? '<span class="sample">EJEMPLO</span>' : project.lanzamiento ? '<span class="sample release-badge">NUEVO LANZAMIENTO</span>' : '';
+  const summary = project.resumen ? '<p class="card-summary">' + escape(project.resumen) + '</p>' : '';
   return '<article class="card" data-color="' + escape(project.color) + '">' +
     '<div class="cover' + (project.estado === 'Próximamente' ? ' upcoming' : '') + '">' +
       sample + (image ? '<img src="' + escape(image) + '" alt="">' : icon(project.estado === 'Próximamente' ? 'clock' : 'game')) + '</div>' +
     '<div class="card-body"><h3><button type="button"' + open + '>' + escape(project.titulo) + '</button></h3>' +
-    '<div class="tags">' + badges.console + badges.engine + badges.fps + '</div>' +
+    summary + '<div class="tags">' + badges.console + badges.engine + badges.fps + '</div>' +
     '<div class="card-meta">' + badges.version + badges.status +
     '<button type="button" class="card-cta" aria-label="Ver ficha de ' + escape(project.titulo) + '"' + open + '>' + icon('arrow') + '</button></div></div></article>';
 }
@@ -119,7 +120,8 @@ function renderCatalog() {
   const category = section === 'adaptadores' ? 'adaptador' : 'port';
   const upcoming = section === 'proximamente';
   const categoryProjects = PROYECTOS.filter(project =>
-    project.tipo === category && (project.estado === 'Próximamente') === upcoming
+    project.tipo === category && (project.estado === 'Próximamente') === upcoming &&
+    (section !== 'lanzamientos' || project.lanzamiento)
   );
   const results = categoryProjects.filter(project => {
     const haystack = normalized([project.titulo, project.descripcion, project.motor, project.estado, ...project.consolas].join(' '));
@@ -142,8 +144,9 @@ function renderCatalog() {
     }
   });
 
-  el('catalog-title').textContent = upcoming ? 'Próximamente' : category === 'port' ? 'Todos los ports' : 'Adaptadores';
-  el('catalog-intro').hidden = !upcoming;
+  el('catalog-title').textContent = section === 'lanzamientos' ? 'Nuevos lanzamientos' : upcoming ? 'Próximamente' : category === 'port' ? 'Todos los ports' : 'Adaptadores';
+  el('catalog-intro').hidden = !upcoming && section !== 'lanzamientos';
+  el('catalog-intro').textContent = upcoming ? 'Ports anunciados para R36S y R36 Max.' : '20XX y 30XX ya disponibles. Corren muy bien y son 100 % jugables, según las pruebas reportadas por Dani.';
   el('result-count').textContent = results.length + (results.length === 1 ? ' proyecto' : ' proyectos') +
     (results.length && results.every(project => project.ejemplo) ? ' · Muestra' : '');
   el('cards').innerHTML = results.map(card).join('');
@@ -157,7 +160,7 @@ function renderCatalog() {
 function renderPage() {
   const wasUpcoming = section === 'proximamente';
   section = location.hash.slice(1);
-  if (!['inicio', 'ports', 'proximamente', 'adaptadores', 'tutoriales', 'actualizaciones', 'info'].includes(section)) section = 'inicio';
+  if (!['inicio', 'ports', 'lanzamientos', 'proximamente', 'adaptadores', 'tutoriales', 'actualizaciones', 'info'].includes(section)) section = 'inicio';
   if (!el('filters').children.length || wasUpcoming !== (section === 'proximamente')) {
     makeFilters();
     el('search').value = '';

@@ -235,3 +235,7 @@ dialog::backdrop { background: #070510cf; }
 .detail-inner > img[src*="/proximamente-"] { background: #171225; }
 .cover.upcoming img[src$="/proximamente-poketale.webp"],
 .detail-inner > img[src$="/proximamente-poketale.webp"] { object-fit: cover; }
+
+/* Nuevos lanzamientos */
+.release-badge { color: var(--yellow); border-color: #f3d64a80; }
+.card-summary { margin: 0; color: #a5f3c1; font-size: .75rem; line-height: 1.4; }

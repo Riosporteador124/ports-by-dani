@@ -1,5 +1,91 @@
 // Cada proyecto es una ficha. Copia una entrada y cambia sus datos.
 const PROYECTOS = [
+{
+  "id": "20xx",
+  "titulo": "20XX",
+  "tituloDetalle": "20XX — Port por Dani",
+  "tipo": "port",
+  "estado": "Jugable",
+  "lanzamiento": true,
+  "resumen": "Corre muy bien · 100 % jugable",
+  "color": "cyan",
+  "imagen": "assets/20xx.webp",
+  "creditoImagen": "Arte promocional · Batterystaple Games / Steam",
+  "consolas": [
+    "R36S",
+    "R36 Max"
+  ],
+  "motor": "Otros",
+  "fecha": "2026-11-17",
+  "ejemplo": false,
+  "descripcion": "20XX ya disponible: corre muy bien y es 100 % jugable, según las pruebas reportadas por Dani. Adaptador de la edición original de Switch con preparación automática desde Ports.",
+  "detalles": [
+    {
+      "titulo": "Instalación",
+      "numerado": true,
+      "puntos": [
+        "Extrae 20XX.sh y la carpeta 20xx juntos en ports de la microSD.",
+        "Coloca un solo NSP base v0 original de tu copia de 20XX para Switch (título 0100749009844000, ARM64) en 20xx/gamedata/. No admite la edición Windows ni actualizaciones NSP. Consulta VERSION REQUERIDA.txt para los requisitos de tu volcado.",
+        "También admite un volcado original sin cifrar: ExeFS en 20xx/gamedata/original/exefs/ y la sección original RomFS en original/romfs.section, según las instrucciones del ZIP.",
+        "Abre 20XX desde Ports. La primera apertura prepara los datos. Las siguientes reutilizan la instalación. Si cancelas la preparación, vuelve a abrir el port para continuar."
+      ]
+    },
+    {
+      "titulo": "Controles y partidas",
+      "puntos": [
+        "R3 muestra u oculta los FPS. El contador comienza oculto.",
+        "SELECT + START cancela la preparación o sale del juego.",
+        "Conserva la carpeta saves/ al actualizar para mantener tus partidas."
+      ]
+    }
+  ],
+  "nota": "El ZIP incluye el adaptador y sus instrucciones. Aporta los archivos originales de la edición compatible; no incluye el juego ni claves.",
+  "descarga": "https://github.com/Riosporteador124/ports-by-dani/releases/download/ports-2026-11-17-20xx-30xx/20XX_ADAPTADOR_DANI.zip",
+  "repositorio": ""
+},
+{
+  "id": "30xx",
+  "titulo": "30XX",
+  "tituloDetalle": "30XX — Port por Dani",
+  "tipo": "port",
+  "estado": "Jugable",
+  "lanzamiento": true,
+  "resumen": "Corre muy bien · 100 % jugable",
+  "color": "violet",
+  "imagen": "assets/30xx.webp",
+  "creditoImagen": "Arte promocional · Batterystaple Games / Steam",
+  "consolas": [
+    "R36S",
+    "R36 Max"
+  ],
+  "motor": "Otros",
+  "fecha": "2026-11-17",
+  "ejemplo": false,
+  "descripcion": "30XX ya disponible: corre muy bien y es 100 % jugable, según las pruebas reportadas por Dani. Adaptador de la edición original de Switch con preparación automática desde Ports.",
+  "detalles": [
+    {
+      "titulo": "Instalación",
+      "numerado": true,
+      "puntos": [
+        "Extrae 30XX.sh y la carpeta 30xx juntos en ports de la microSD.",
+        "Coloca un solo NSP base v0 original de tu copia de 30XX para Switch (título 010059B017F9E000, ARM64) en 30xx/gamedata/. No admite la edición Windows ni actualizaciones NSP. Consulta VERSION REQUERIDA.txt para los requisitos de tu volcado.",
+        "También admite un volcado original sin cifrar: ExeFS en 30xx/gamedata/original/exefs/ y la sección original RomFS en original/romfs.section, según las instrucciones del ZIP.",
+        "Abre 30XX desde Ports. La primera apertura prepara los datos. Las siguientes reutilizan la instalación. Si cancelas la preparación, vuelve a abrir el port para continuar."
+      ]
+    },
+    {
+      "titulo": "Controles y partidas",
+      "puntos": [
+        "R3 muestra u oculta los FPS. El contador comienza oculto.",
+        "SELECT + START cancela la preparación o sale del juego.",
+        "Conserva la carpeta saves/ al actualizar para mantener tus partidas."
+      ]
+    }
+  ],
+  "nota": "El ZIP incluye el adaptador y sus instrucciones. Aporta los archivos originales de la edición compatible; no incluye el juego ni claves.",
+  "descarga": "https://github.com/Riosporteador124/ports-by-dani/releases/download/ports-2026-11-17-20xx-30xx/30XX_ADAPTADOR_DANI.zip",
+  "repositorio": ""
+},
   {
     "id": "oddmar",
     "titulo": "Oddmar",
