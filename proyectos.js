@@ -18,7 +18,7 @@ const PROYECTOS = [
   "motor": "Otros",
   "fecha": "2026-11-17",
   "ejemplo": false,
-  "descripcion": "20XX ya disponible: corre muy bien y es 100 % jugable, según las pruebas reportadas por Dani. Adaptador de la edición original de Switch con preparación automática desde Ports.",
+  "descripcion": "20XX ya disponible: corre muy bien y es 100 % jugable, con 33–38 FPS, según las pruebas reportadas por Dani en dArkOSRE, ArkOSClone y dArkOSClone. Adaptador de la edición original de Switch con preparación automática desde Ports.",
   "detalles": [
     {
       "titulo": "Instalación",
@@ -26,6 +26,7 @@ const PROYECTOS = [
       "puntos": [
         "Extrae 20XX.sh y la carpeta 20xx juntos en ports de la microSD.",
         "Coloca un solo NSP base v0 original de tu copia de 20XX para Switch (título 0100749009844000, ARM64) en 20xx/gamedata/. No admite la edición Windows ni actualizaciones NSP. Consulta VERSION REQUERIDA.txt para los requisitos de tu volcado.",
+        "Añade el archivo prod.keys de tu propia consola en 20xx/gamedata/ antes de iniciar la preparación del NSP. Las claves no están incluidas en el ZIP.",
         "También admite un volcado original sin cifrar: ExeFS en 20xx/gamedata/original/exefs/ y la sección original RomFS en original/romfs.section, según las instrucciones del ZIP.",
         "Abre 20XX desde Ports. La primera apertura prepara los datos. Las siguientes reutilizan la instalación. Si cancelas la preparación, vuelve a abrir el port para continuar."
       ]
@@ -41,7 +42,11 @@ const PROYECTOS = [
   ],
   "nota": "El ZIP incluye el adaptador y sus instrucciones. Aporta los archivos originales de la edición compatible; no incluye el juego ni claves.",
   "descarga": "https://github.com/Riosporteador124/ports-by-dani/releases/download/ports-2026-11-17-20xx-30xx/20XX_ADAPTADOR_DANI.zip",
-  "repositorio": ""
+  "repositorio": "",
+  "fps": {
+    "rango": "33–38",
+    "contexto": "Rendimiento y pruebas reportados por Dani en dArkOSRE, ArkOSClone y dArkOSClone."
+  }
 },
 {
   "id": "30xx",
@@ -61,7 +66,7 @@ const PROYECTOS = [
   "motor": "Otros",
   "fecha": "2026-11-17",
   "ejemplo": false,
-  "descripcion": "30XX ya disponible: corre muy bien y es 100 % jugable, según las pruebas reportadas por Dani. Adaptador de la edición original de Switch con preparación automática desde Ports.",
+  "descripcion": "30XX ya disponible: corre muy bien y es 100 % jugable, con 33–38 FPS, según las pruebas reportadas por Dani en dArkOSRE, ArkOSClone y dArkOSClone. Adaptador de la edición original de Switch con preparación automática desde Ports.",
   "detalles": [
     {
       "titulo": "Instalación",
@@ -69,6 +74,7 @@ const PROYECTOS = [
       "puntos": [
         "Extrae 30XX.sh y la carpeta 30xx juntos en ports de la microSD.",
         "Coloca un solo NSP base v0 original de tu copia de 30XX para Switch (título 010059B017F9E000, ARM64) en 30xx/gamedata/. No admite la edición Windows ni actualizaciones NSP. Consulta VERSION REQUERIDA.txt para los requisitos de tu volcado.",
+        "Añade el archivo prod.keys de tu propia consola en 30xx/gamedata/ antes de iniciar la preparación del NSP. Las claves no están incluidas en el ZIP.",
         "También admite un volcado original sin cifrar: ExeFS en 30xx/gamedata/original/exefs/ y la sección original RomFS en original/romfs.section, según las instrucciones del ZIP.",
         "Abre 30XX desde Ports. La primera apertura prepara los datos. Las siguientes reutilizan la instalación. Si cancelas la preparación, vuelve a abrir el port para continuar."
       ]
@@ -84,7 +90,11 @@ const PROYECTOS = [
   ],
   "nota": "El ZIP incluye el adaptador y sus instrucciones. Aporta los archivos originales de la edición compatible; no incluye el juego ni claves.",
   "descarga": "https://github.com/Riosporteador124/ports-by-dani/releases/download/ports-2026-11-17-20xx-30xx/30XX_ADAPTADOR_DANI.zip",
-  "repositorio": ""
+  "repositorio": "",
+  "fps": {
+    "rango": "33–38",
+    "contexto": "Rendimiento y pruebas reportados por Dani en dArkOSRE, ArkOSClone y dArkOSClone."
+  }
 },
   {
     "id": "oddmar",
